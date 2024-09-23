@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--        <record id="hr_employee_position_report" model="ir.actions.report">-->
+<!--            <field name="name">Print Employee Resume</field>-->
+<!--            <field name="model">hr.employee</field>-->
+<!--            <field name="report_type">qweb-pdf</field>-->
+<!--            <field name="report_name">egp_hr.print_employee_id</field>-->
+<!--            <field name="report_file">egp_hr.print_employee_id</field>-->
+<!--            <field name="binding_model_id" ref="model_hr_employee"/>-->
+<!--            <field name="print_report_name">'Badge - %s' % (object.name).replace('/', '')</field>-->
+<!--            <field name="binding_type">report</field>-->
+<!--            <field name="paperformat_id" ref="egp_hr.report_paperformat_a4"/>-->
+<!--        </record>-->
+
+        <record id="hr_employee_position_report" model="ir.actions.report">
+            <field name="name">Print Employee Report</field>
+            <field name="model">hr.employee</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">egp_hr.print_employee_id</field>
+            <field name="report_file">egp_hr.print_employee_id</field>
+            <field name="print_report_name">'Badge - %s' % (object.name).replace('/', '')</field>
+            <field name="binding_model_id" ref="model_hr_employee"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="print_employee_id">
+            <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="doc">
+                    <div class="page" style="font-family:Calibri;">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <p>امارت اسلامی افغانستان</p>
+                                <p>وزارت مخابرات و تکنالوژی معلوماتی</p>
+                            </div>
+
+                            <div class="col-6 text-center">
+                                <p>د افغانستان اسلامی امارت</p>
+                                <p>د مخابراتو او معلوماتی تکنالوژی وزارت</p>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-2" style="margin-left: 10px; margin-top: 10px;">
+                                <img src="egp_hr/static/description/MCIT_logo.png"
+                                     height="150" border="1" width="200"/>
+                            </div>
+                            <div class="col-8 text-center">
+                                <p>Islamic Emarat of Afghanistan</p>
+                                <p>Ministry of Communication and IT</p>
+                                <p>د بشری سرچینو ریاست</p>
+                                <p>د سوانح آمریت</p>
+                            </div>
+                            <div class="col-2" style="padding-right: 0px;">
+                                <img src="egp_hr/static/description/Emerate_logo.png"
+                                     height="100" border="1" width="100" style="margin-right: 0px; margin-top: 10px;"/>
+                            </div>
+                        </div>
+                        <div class="row" style="font-family:Calibri;">
+                            <div class="col-11">
+                                <p>Number</p>
+                                <br/>
+                                <p>Date</p>
+                            </div>
+                            <div class="col-1" style="margin-bottom: 15px;">
+                                <img t-att-src="image_data_uri(doc.avatar_1920)" style="max-height:85pt;max-width:90%"
+                                     alt="Employee Image"/>
+                            </div>
+                        </div>
+                        <div class="col-12" style="font-family:Calibri; padding-bottom: 15px;">
+                            Civil service employee report form to complete the records for the purpose of
+                            appointment in new duties, conversion, dismissal and re-appointment
+                        </div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <th>Name</th>
+                                <th>Father Name</th>
+                                <th>Grand Father Name</th>
+                                <th>Date of Birth</th>
+                                <th>Place of Birth</th>
+                                <th>ID Card No</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <span t-field="doc.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="doc.father_name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="doc.grand_father_name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="doc.emp_date_of_birth"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="doc.emp_place_of_birth"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="doc.identification_no"/>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <div style="padding-bottom: 15px;">Information about education and higher education</div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Field of Study</td>
+                                <td>Degree</td>
+                                <td>University</td>
+                                <td>Education Place</td>
+                                <td>Start Date</td>
+                                <td>Graduation Date</td>
+                            </tr>
+                            <t t-foreach="doc.education_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.faculty_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.degree_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.university_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.country.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.education_start_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.education_end_date"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+                        <div style="font-family:Calibri; padding-top: 5px; padding-bottom: 15px;">Address and Contacts
+                        </div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Address</td>
+                                <td>Email</td>
+                                <td>Phone No</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><span t-field="doc.temporary_province"/>,
+                                    <span t-field="doc.temporary_district"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="doc.work_email"/>
+                                </td>
+                                <td class="text-center">
+<!--                                    <span t-field="doc.private_phone"/>-->
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="font-family:Calibri; padding-bottom: 15px;">Work Experiences related to the job
+                        </div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Organization</td>
+                                <td>Job Position</td>
+                                <td>Grade</td>
+                                <td>Step</td>
+                                <td>Job Location</td>
+                                <td>Department</td>
+                                <td>Status</td>
+                                <td>Start Date</td>
+                                <td>End Date</td>
+                                <td>Duration</td>
+                            </tr>
+                            <t t-foreach="doc.experience_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.organization_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.job_position"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.grade"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.step_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.department"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.status_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.status_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.job_end_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.job_start_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.duration_days"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+                        <div style="font-family:Calibri; padding-bottom: 15px;">Performance evaluation information</div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Evaluation Date</td>
+                                <td>Evaluation Type (Annual)</td>
+                                <td>Evaluation Score</td>
+                                <td>Final Result</td>
+                            </tr>
+                            <t t-foreach="doc.appraisal_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.appraisal_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.appraisal_type"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.total_marks"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.final_result"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+                        <div style="font-family:Calibri; padding-bottom: 15px;">Rewards and Punishment</div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Reward Type</td>
+                                <td>Reason</td>
+                                <td>Date of Issue</td>
+                                <td>No of Sentence</td>
+                            </tr>
+                            <t t-foreach="doc.reward_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.reward_type"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.reason"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.order_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.order_no"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+<!--                        <div style="font-family:Calibri; padding-bottom: 15px;">Skills and Certification</div>-->
+<!--                        <table class="table table-condensed" style="font-family:Calibri;">-->
+<!--                            <tr>-->
+<!--                                <td>Skill Type</td>-->
+<!--                                <td>Major</td>-->
+<!--                                <td>Certification</td>-->
+<!--                                <td>Remarks</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="text-center">-->
+<!--                                    <span t-field="doc.identification_no"/>-->
+<!--                                </td>-->
+<!--                                <td class="text-center">-->
+<!--                                    <span t-field="doc.course"/>-->
+<!--                                </td>-->
+<!--                                <td class="text-center">-->
+<!--                                    <span t-field="doc.major"/>-->
+<!--                                </td>-->
+<!--                                <td class="text-center">-->
+<!--                                    <span t-field="doc.skill"/>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+                        <div style="font-family:Calibri; padding-bottom: 15px;">Training courses</div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Course</td>
+                                <td>Training Type</td>
+                                <td>Training Location</td>
+                                <td>Start Date</td>
+                                <td>End Date</td>
+                            </tr>
+                            <t t-foreach="doc.training_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.course_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.training_type"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.training_location"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.training_start_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.training_end_date"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+                        <div style="font-family:Calibri; padding-bottom: 15px;">Language Skills</div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Language</td>
+                                <td>Reading</td>
+                                <td>Speaking</td>
+                                <td>Listening</td>
+                                <td>Writing</td>
+                            </tr>
+                            <t t-foreach="doc.language_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.language"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.reading"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.speaking"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.listening"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.writing"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+                        <div style="font-family:Calibri; padding-bottom: 15px;">Publication (Book, Magazine ... )</div>
+                        <table class="table table-condensed" style="font-family:Calibri;">
+                            <tr>
+                                <td>Publication Type</td>
+                                <td>Subject</td>
+                                <td>Publish Date</td>
+                                <td>No of Pages</td>
+                                <td>ISBN</td>
+                            </tr>
+                            <t t-foreach="doc.publication_ids" t-as="emp">
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="emp.publication_type"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.subject"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.publication_date"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.no_of_pages"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="emp.isbn"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+<!--                        <div class="row">-->
+<!--                            <div class="col-4">Administrator</div>-->
+<!--                            <div class="col-4">Employee officer</div>-->
+<!--                            <div class="col-4">Head of Human Resource</div>-->
+<!--                        </div>-->
+                    </div>
+                </t>
+            </t>
+</t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,1982 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* egp_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-11 17:56+0000\n"
+"PO-Revision-Date: 2024-06-11 17:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: egp_hr
+#: model:ir.actions.report,print_report_name:egp_hr.hr_employee_position_report
+msgid "'Badge - %s' % (object.name).replace('/', '')"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__1st
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__1st
+msgid "1st"
+msgstr "اول"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__2nd
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__2nd
+msgid "2nd"
+msgstr "دوم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__3rd
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__3rd
+msgid "3rd"
+msgstr "سوم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__4th
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__4th
+msgid "4th"
+msgstr "چهارم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__5th
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__5th
+msgid "5th"
+msgstr "پنجم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__6th
+msgid "6th"
+msgstr "ششم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__7th
+msgid "7th"
+msgstr "هفتم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__8th
+msgid "8th"
+msgstr "هشتم"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "<span class=\"o_stat_text\">Employee</span>"
+msgstr "کارمند"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__is_action_plan_accommodated
+msgid "Action Plan Accommodation"
+msgstr "آیا پلان کاری را تطبیق نموده است"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_document__status__active
+msgid "Active"
+msgstr "فعال"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Address"
+msgstr "آدرس"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Address and Contacts"
+msgstr "آدرس ها و تماس ها"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__admin_opinion
+msgid "Admin Opinion"
+msgstr "نظریه مدیر"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__is_agree_with_the_result
+msgid "Agree with the result"
+msgstr "با نتیجه موافق است یا خیر"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__amount_of_cash
+msgid "Amount of Cash"
+msgstr "مقدار پول"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__amount_of_cash_for_reward
+msgid "Amount of Cash for Reward"
+msgstr "مقدار پول برای مکافات"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__annual
+msgid "Annual"
+msgstr "سالانه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Application Summary"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__appraisal_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Appraisal"
+msgstr "ارزیابی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__appraisal_date
+msgid "Appraisal Date"
+msgstr "تاریخ ارزیابی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__appraisal_type
+msgid "Appraisal Type"
+msgstr "نوع ارزیابی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__organization_id
+msgid "Appreciation of the Organization"
+msgstr "اداره تقدیر کننده"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_document__status__archive
+msgid "Archive"
+msgstr "آرشیف"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Archived"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__َarticle
+msgid "Article"
+msgstr "مقاله"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__bank_name
+msgid "Bank Name"
+msgstr "نام بانک"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__bank_slip_no
+msgid "Bank Slip No"
+msgstr "آویز بانکی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__basic_objective_of_work_plan
+msgid "Basic objective of work plan"
+msgstr "اهداف اساسی پلان کاری"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__batch_no
+msgid "Batch No"
+msgstr "کود نمبر"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__book
+msgid "Book"
+msgstr "کتاب"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__car
+msgid "Car"
+msgstr "موتر"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__cash
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__cash
+msgid "Cash"
+msgstr "پول نقد"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Cash Guarantee"
+msgstr "ًضمانت پول"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__training_certification
+msgid "Certification"
+msgstr "تصدیق نامه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_chapter
+msgid "Chapter"
+msgstr "جلد"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Citizenship"
+msgstr "تابعیت"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__organization_type__civil
+msgid "Civil"
+msgstr "ملکی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid ""
+"Civil service employee report form to complete the records for the purpose of\n"
+"                            appointment in new duties, conversion, dismissal and re-appointment"
+msgstr ""
+"فورم خلص سوانح کارکن خدمات ملکی جهت تکمیل سوابق غرض تقرر در وظایف جدید، "
+"تبدیلی، انتصاف و تقرر مجدد"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_exam__exam_type__computerized_exam
+msgid "Computerized Exam"
+msgstr "امتحان کمپیوتری"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_contact_info
+msgid "Contact Info"
+msgstr "معلومات تماس"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_contemporary_address
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Contemporary Address"
+msgstr "آدرس فعلی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__introduce_to_capacity_building
+msgid ""
+"Continuation of duty in active duties and steps and introduction to "
+"education"
+msgstr "ادامه وظیفه در بست و قدم فعلی و معرفی شدن به آموزش"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__continuation_position
+msgid "Continuation of duty in the current position"
+msgstr "ادامه وظیفه در بست فعلی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__country
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__country
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__country
+msgid "Country"
+msgstr "کشور"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__emp_country_of_birth
+msgid "Country of Birth"
+msgstr "کشور محل تولد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__name
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Course"
+msgstr "کورس"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Create Employee"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__create_uid
+msgid "Created by"
+msgstr "ساخته شده توسط"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__create_date
+msgid "Created on"
+msgstr "ساخته شده در"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Date"
+msgstr "تاریخ"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__date_approved
+msgid "Date Approved"
+msgstr "تاریخ منظوری"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__emp_date_of_birth
+msgid "Date Of Birth"
+msgstr "تاریخ تولد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__punishment_date
+msgid "Date Of Punishment"
+msgstr "تاریخ مجازات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Date of Birth"
+msgstr "تاریخ تولد"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Date of Issue"
+msgstr "تاریخ صدور حکم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__deed_date
+msgid "Deed Date"
+msgstr "تاریخ قباله"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__deed_no
+msgid "Deed No"
+msgstr "نمبر قباله"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__degree_id
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Degree"
+msgstr "درجه تحصیل"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__department
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Department"
+msgstr "دیپارتمنت"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Directly Available"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__conversion_to_province
+msgid "Discipline (conversion to provinces)"
+msgstr "تادیب (تبدیل به ولایات)"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__display_name
+msgid "Display Name"
+msgstr "نمایش اسم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_district_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__temporary_district_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__property_district_id
+msgid "District"
+msgstr "ولسوالی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__attachment_ids
+msgid "Document"
+msgstr "اسناد"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Document Attachment"
+msgstr "ضمیمه اسناد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__document_name
+msgid "Document Name"
+msgstr "اسم دوسیه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__document_type
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__name
+msgid "Document Type"
+msgstr "نوعیت اسناد"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Duration"
+msgstr "مدت خدمت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__duration_days
+msgid "Duration Days (Days)"
+msgstr "مدت خدمت"
+
+#. module: egp_hr
+#: model:res.groups,name:egp_hr.group_employee_officers
+msgid "EGP-HR Employee / Create all employees details "
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__education_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Education"
+msgstr "تحصیل"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Education Place"
+msgstr "محل تحصیل"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__identification_type__electronic_id_card
+msgid "Electronic ID Card"
+msgstr "تذکره الکترونیکی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__email
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_email
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Email"
+msgstr "ایمیل آدرس"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__employee_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__employee_id
+msgid "Employee"
+msgstr "کارمند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_appraisal
+msgid "Employee Appraisal"
+msgstr "ارزیابی کارمند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_cash_guarantee
+msgid "Employee Cash Guarantee"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_course
+msgid "Employee Course"
+msgstr "کورس"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_degree
+msgid "Employee Degree"
+msgstr "درجه تحصیل"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_district
+msgid "Employee District"
+msgstr "ولسوالی"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_document
+msgid "Employee Document"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_document_type
+#: model:ir.model,name:egp_hr.model_employee_leave_reason
+msgid "Employee Document Type"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_education
+msgid "Employee Education"
+msgstr "تحصیل"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_exam
+msgid "Employee Exam"
+msgstr "امتحان"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_experience
+msgid "Employee Experience"
+msgstr "کارمند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_faculty
+msgid "Employee Faculty"
+msgstr "پوهنڅۍ"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_fire
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Employee Fire"
+msgstr "انفکاک / انفصال"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_fire_type
+msgid "Employee Fire Type"
+msgstr "نوعیت انفکاک"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Employee Image"
+msgstr "عکس کارمند"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__employee_opinion
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__employee_opinion_again
+msgid "Employee Opinion"
+msgstr "نظریه کامند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_organization
+msgid "Employee Organization"
+msgstr "اداره"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_person_guarantee
+msgid "Employee Person Guarantee"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_property
+msgid "Employee Property"
+msgstr "دارایی کارمند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_property_guarantee
+msgid "Employee Property Guarantee"
+msgstr "ضمانت ملکیت"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_retirement_reason
+msgid "Employee Reason"
+msgstr "دلیل"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_relationship
+msgid "Employee Relationship"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_relatives
+msgid "Employee Relatives"
+msgstr "معلومات اقارب"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Employee Resume"
+msgstr "سوانح کارمند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_retirement
+msgid "Employee Retirement"
+msgstr "تقاعد کارمند"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_retirement_type
+msgid "Employee Retirement Type"
+msgstr "نوع تقاعد"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_reward
+msgid "Employee Reward"
+msgstr "هکافات"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_status
+msgid "Employee Status"
+msgstr "حالت"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_step
+msgid "Employee Step"
+msgstr "رتبه / قدم"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_training
+msgid "Employee Training"
+msgstr "آموزش"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_university
+msgid "Employee University"
+msgstr "پوهنتون"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_village
+msgid "Employee Village"
+msgstr "قریه"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_punishment
+msgid "Employee punishment"
+msgstr "مجازات کارمند"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Employee's Work Experience and Education"
+msgstr "تجارب کاری و تحصیلات کارمند"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__encouragement_of_civil_services_workers
+msgid "Encouragement of civil service workers"
+msgstr "تشویق کارمندان ملکی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__education_end_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__job_end_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__punishment_end_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__retirement_end_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__training_end_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__travel_end_date
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__end_date
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "End Date"
+msgstr "تاریخ ختم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_exam__exam_type__english
+msgid "English"
+msgstr "انگلیسی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Evaluation Date"
+msgstr "تاریخ ارزیابی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Evaluation Score"
+msgstr "نمره معیاری ارزیابی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Evaluation Type (Annual)"
+msgstr "نوع ارزیابی (سالانه)"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__exam_ids
+msgid "Exam"
+msgstr "امتحان"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_date
+msgid "Exam Date"
+msgstr "تاریخ امتحان"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_type
+msgid "Exam Type"
+msgstr "نوع امتحان"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Exams"
+msgstr "امتحانات"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__listening__excellent
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__reading__excellent
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__speaking__excellent
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__writing__excellent
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__excellent
+msgid "Excellent"
+msgstr "عالی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__experience_ids
+msgid "Experience"
+msgstr "تجربه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_expiry_date
+msgid "Expire Date"
+msgstr "تاریخ انقضا"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__passport_end_date
+msgid "Expiry Date"
+msgstr "تاریخ ختم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__external_head
+msgid "External Head"
+msgstr "آمر مستقیم خارجی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__faculty_id
+msgid "Faculty"
+msgstr "پوهنڅۍ"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__father_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__father_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_father_name
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__father_name
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Father Name"
+msgstr "ولد"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__emp_gender__female
+msgid "Female"
+msgstr "زن"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Field of Study"
+msgstr "رشته تحصیل"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__final_result
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Final Result"
+msgstr "نتیجه نهایی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__fire_ids
+msgid "Fire"
+msgstr "انفکاک"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__fire_type
+msgid "Fire Type"
+msgstr "نوعیت انفکاک"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__first_degree_of_appreciation
+msgid "First degree of appreciation"
+msgstr "تقدیرنامه درجه اول"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__garden
+msgid "Garden"
+msgstr "باغ"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__emp_gender
+msgid "Gender"
+msgstr "جنسیت"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_health__health_status__good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__listening__good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__reading__good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__speaking__good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__writing__good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__good
+msgid "Good"
+msgstr "خوب"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__grade
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Grade"
+msgstr "بست"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Graduation Date"
+msgstr "تاریخ ختم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__grand_father_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__grand_father_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_grand_father_name
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__grand_father_name
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Grand Father Name"
+msgstr "ولدیت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__cash_guarantee_ids
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__person_guarantee_ids
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__property_guarantee_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Guarantee"
+msgstr "ضمانت"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__head
+msgid "Head"
+msgstr "ریس"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__head_details
+msgid "Head Details"
+msgstr "معلومات در مورد آمر"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__head_opinion
+msgid "Head Opinion"
+msgstr "نظریه آمر"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_health
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__health_ids
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__health_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Health"
+msgstr "صحت"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Hired"
+msgstr "استخدام شده"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__home
+msgid "Home"
+msgstr "خانه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__home_no
+msgid "Home No"
+msgstr "نمبر خانه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__home_number
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Home Number"
+msgstr "نمبر خانه"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__honorary_letter_of_appreciation
+msgid "Honorary Letter of Appreciation"
+msgstr "تحسین نامه افتخاری"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__house
+msgid "House"
+msgstr "سرای"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_hr_employee
+msgid "Human Resource"
+msgstr "کارمند"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__id
+msgid "ID"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_type
+msgid "ID Card"
+msgstr "تذکره"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "ID Card No"
+msgstr "نمبر تذکره"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__isbn
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "ISBN"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Identification"
+msgstr "تذکره"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_identification_no
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_no
+msgid "Identification No"
+msgstr "شماره تذکره"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Information about education and higher education"
+msgstr "د زده کړو او لوړو زده کړو په هکله معلومات / معلومات تحصیلی و تعلیمی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__organization_type__international_organization
+msgid "International Organization"
+msgstr "ادارات بین المللی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_exam__exam_type__interview
+msgid "Interview"
+msgstr "مصاحبه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Islamic Emarat of Afghanistan"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__jewelery
+msgid "Jewelery"
+msgstr "زیورات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__job
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Job"
+msgstr "وظیفه"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__job_announcement
+msgid "Job Announcement"
+msgstr "اعلان وظیفه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Job Location"
+msgstr "محل وظیفه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__job_position
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__job_position
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_job_position
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Job Position"
+msgstr "وظیفه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Jobs - Recruitment Form"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__land
+msgid "Land"
+msgstr "زمین"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_language
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__language
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__language_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Language"
+msgstr "زبان"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Language Skills"
+msgstr "مهارت های زبان"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__last_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__last_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_last_name
+msgid "Last Name"
+msgstr "تخلص"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__write_uid
+msgid "Last Updated by"
+msgstr "آخرین آپدیت شده توسط"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_course__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_district__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire_type__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_leave_reason__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__write_date
+msgid "Last Updated on"
+msgstr "آخرین آپدیت شده در"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__listening
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Listening"
+msgstr "مهارت فهمیدن"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__magazine
+msgid "Magazine"
+msgstr "مجله"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "پیوست اصلی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__major
+msgid "Major"
+msgstr "رشته تحصیلی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__emp_gender__male
+msgid "Male"
+msgstr "مرد"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__market
+msgid "Market"
+msgstr "مارکیت"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__medal
+msgid "Medal"
+msgstr "مدال"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__organization_type__military
+msgid "Military"
+msgstr "نظامی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Ministry of Communication and IT"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__monthly
+msgid "Monthly"
+msgstr "ماهانه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Motivations..."
+msgstr "انگیزه"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__movable_property
+msgid "Movable Property"
+msgstr "دارایی منقول"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__organization_type__ngo
+msgid "NGO"
+msgstr "موسسات غیر دولتی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__nic_no
+msgid "NIC No"
+msgstr "نمبر تذکره"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__person_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_name
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Name"
+msgstr "اسم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__emp_nationality
+msgid "Nationality"
+msgstr "کشور"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__basic_objective_of_work_plan__no
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__is_action_plan_accommodated__no
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__is_agree_with_the_result__no
+msgid "No"
+msgstr "نخیر"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__no_of_pages
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "No of Pages"
+msgstr "تعداد صفحات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "No of Sentence"
+msgstr "نمبر حکم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__nonmovable_peroperty
+msgid "Non Movable Property"
+msgstr "دارایی غیر منقول"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Number"
+msgstr "شماره"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__one_month_salary
+msgid "One Month Salary"
+msgstr "معاش یک ماه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__order
+msgid "Order"
+msgstr "حکم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__order_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__order_date
+msgid "Order Date"
+msgstr "تاریخ حکم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__order_no
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__order_no
+msgid "Order No"
+msgstr "نمبر حکم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__organization_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_organization__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__organization
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Organization"
+msgstr "اداره / وزارت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__organization_type
+msgid "Organization Type"
+msgstr "نوع اداره"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__emp_gender__other
+msgid "Other"
+msgstr "دیگر"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Other applications"
+msgstr "برنامه های دیگر"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_page_no
+msgid "Page No"
+msgstr "نمبر صفحه"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__identification_type__paper_id_card
+msgid "Paper ID card"
+msgstr "تذکره کاغذی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Passport"
+msgstr "پاسپورت"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Performance evaluation information"
+msgstr "د اجراتو د ارزونی معلومات / معلومات ارزیابی اجرات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_permanent_address
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Permanent Address"
+msgstr "آدرس دایمی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__permanent_district
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Permanent District"
+msgstr "ولسوالی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__permanent_district_id
+msgid "Permanent District / Village"
+msgstr "قریه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__permanent_province
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Permanent Province"
+msgstr "ولایت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__permanent_street
+msgid "Permanent Street"
+msgstr "کوچه / سرک"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__permanent_village
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Permanent Village"
+msgstr "قریه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Person Guarantee"
+msgstr "ضمانت شخص"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Phone"
+msgstr "موبایل"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__phone_no
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Phone No"
+msgstr "شماره تماس"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__emp_place_of_birth
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Place of Birth"
+msgstr "محل تولد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__price
+msgid "Price"
+msgstr "قیمت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_print_date
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__passport_print_date
+msgid "Print Date"
+msgstr "تاریخ چاپ"
+
+#. module: egp_hr
+#: model:ir.actions.report,name:egp_hr.hr_employee_position_report
+msgid "Print Employee Report"
+msgstr "چاپ سوانح کارمند"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Private Information"
+msgstr "معلومات شخصی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__private_streets
+msgid "Private Street"
+msgstr "کوچه / سرک"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__property_type
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_property
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__property_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Property"
+msgstr "دارایی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Property & Travel"
+msgstr "دارایی و سفر ها"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Property Guarantee"
+msgstr "ضمانت دارایی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__province
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_province_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__temporary_province_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__property_province_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__permanent_address
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__temporary_address
+msgid "Province"
+msgstr "ولایت"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_publication
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Publication"
+msgstr "انتشارات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Publication (Book, Magazine ... )"
+msgstr "انتشارات (کتاب، مجله ...)"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__publication_date
+msgid "Publication Date"
+msgstr "تاریخ چاپ"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__publication_type
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Publication Type"
+msgstr "نوع انتشارات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Publish Date"
+msgstr "تاریخ چاپ"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__publication_ids
+msgid "Pulbication"
+msgstr "انتشارات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__punishment_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Punishment"
+msgstr "مجازات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__punishment_type
+msgid "Punishment Type"
+msgstr "نوع مجازات"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__quarterly
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__quarterly
+msgid "Quarterly"
+msgstr "ربع وار"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__reading
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Reading"
+msgstr "مهارت خواندن"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_reason__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__reason
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Reason"
+msgstr "دلیل صدور حکم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__recruitment_date
+msgid "Recruitment Date"
+msgstr "تاریخ استخدام"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Refuse"
+msgstr "رد کردن"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Refused"
+msgstr "رد شده"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relationship__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_id
+msgid "Relationship"
+msgstr "رابطه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Relative Information"
+msgstr "اقارب"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__relationship_ids
+msgid "Relatives"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__cash_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__document_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__education_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__job_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__fire_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__health_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property__remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__property_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__punishment_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__retirement_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__training_remarks
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__remarks
+msgid "Remarks"
+msgstr "ملاحظات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__health_report_date
+msgid "Report Date"
+msgstr "تاریخ گزارش"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Restore"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_result
+msgid "Result"
+msgstr "نتیجه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__retirement_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Retirement"
+msgstr "تقاعد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__retirement_reason_id
+msgid "Retirement Reason"
+msgstr "دلیل تقاعد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement__retirement_type_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__name
+msgid "Retirement Type"
+msgstr "نوع تقاعد"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Reward"
+msgstr "مکافات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Reward & Punishments"
+msgstr "مکافات و مجازات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_reward__reward_type
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Reward Type"
+msgstr "نوع مکافات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Rewards and Punishment"
+msgstr "مکافات و مجازات"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_score
+msgid "Score"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__second_degree_of_appreciation
+msgid "Second degree of appreciation"
+msgstr "تقدیر نامه درجه دوم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__sending_date
+msgid "Sending Date"
+msgstr "تاریخ ارسال"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__sign
+msgid "Sign"
+msgstr "امضا"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__speaking
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Speaking"
+msgstr "مهارت صحبت کردن"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__education_start_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__job_start_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__punishment_start_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__training_start_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_travel__travel_start_date
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__start_date
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Start Date"
+msgstr "تاریخ آغاز"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_document__status
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__status_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_health__health_status
+#: model:ir.model.fields,field_description:egp_hr.field_employee_status__name
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Status"
+msgstr "حالت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__job_step
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Step"
+msgstr "قدم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__name
+msgid "Step Or Rank"
+msgstr "قدم / رتبه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__step_id
+msgid "Step or Rank"
+msgstr "قدم / رتبه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__street_no
+msgid "Street No"
+msgstr "نمبر کوچه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Street..."
+msgstr "کوچه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_subject
+#: model:ir.model.fields,field_description:egp_hr.field_employee_publication__subject
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__subject
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Subject"
+msgstr "مضمون"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__superior_head_opinion
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__supervisor_opinion
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__superior_head
+msgid "Superior Head"
+msgstr "آمر مستقیم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__supervisor
+msgid "Supervisor"
+msgstr "نظارت کننده"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__supreme
+msgid "Supreme"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "Tags"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_exam__exam_type__technical
+msgid "Technical (Special Interview)"
+msgstr "تخنیکی (مصاحبه خصوصی)"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__temporary_district
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Temporary District"
+msgstr "ولسوالی"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__temporary_district_id
+msgid "Temporary District / Village"
+msgstr "قریه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__temporary_province
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Temporary Province"
+msgstr "ولایت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__temporary_village
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Temporary Village"
+msgstr "قریه"
+
+#. module: egp_hr
+#: model:res.groups,comment:egp_hr.group_employee_officers
+msgid "The user will be able to approve document created by employees."
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__third_degree_of_appreciation
+msgid "Third degree of appreciation"
+msgstr "تقدری نامه درجه سوم"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__total_marks
+msgid "Total Marks"
+msgstr "نمرات مجموعی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__trail
+msgid "Trail"
+msgstr "آزمایشی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__trail_according_to_the_plan
+msgid "Trail According To The Plan"
+msgstr "ارزیابی به اساس پلان"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__training_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Training"
+msgstr "آموزش"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__training_location
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Training Location"
+msgstr "محل آموزش"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__training_result
+msgid "Training Result"
+msgstr "نتیجه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_training__course_id
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Training Type"
+msgstr "کورس"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Training courses"
+msgstr "کورس های آموزشی"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_travel
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__travel_ids
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Travel"
+msgstr "سفر"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_health__health_status__under_operation
+msgid "Under Operation"
+msgstr "تحت عملیات"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_health__health_status__َunder_treatment
+msgid "Under Treatment"
+msgstr "تحت تداوی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__organization_type__united_nations
+msgid "United Nations"
+msgstr "ملل متحد"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__university_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_university__name
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "University"
+msgstr "پوهنتون"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__5th_step
+msgid "Upgrade to the Fifth step"
+msgstr "ارتقا به قدم پنجم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__4th_step
+msgid "Upgrade to the Fourth step"
+msgstr "ارتقا به قدم چهارم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__2nd_step
+msgid "Upgrade to the Second step"
+msgstr "ارتقا به قدم دوم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__final_result__3rd_step
+msgid "Upgrade to the Third step"
+msgstr "ارتقا به قدم سوم"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__listening__َvery_good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__reading__َvery_good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__speaking__َvery_good
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_language__writing__َvery_good
+msgid "Very Good"
+msgstr "متوسط"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_village_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__temporary_village_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__property_village_id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_village__name
+msgid "Village"
+msgstr "قریه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_punishment__violation_type
+msgid "Violation Type"
+msgstr "توع تخلف"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Work Experience"
+msgstr "تجارب کاری"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Work Experiences related to the job"
+msgstr "تجارب کاری مرتبط به وظیفه"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
+msgid "Work Permit"
+msgstr "جواز کارت"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_language__writing
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "Writing"
+msgstr "مهارت نوشتن"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_exam__exam_type__written_test
+msgid "Written Test"
+msgstr "امتحان تحریری"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__basic_objective_of_work_plan__yes
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__is_action_plan_accommodated__yes
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__is_agree_with_the_result__yes
+msgid "Yes"
+msgstr "بلی"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "e.g. John Doe"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
+msgid "e.g. Sales Manager 2 year experience"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__elementary
+msgid "elementary"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__name
+msgid "faculty"
+msgstr "پوهنڅۍ"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__medium
+msgid "medium"
+msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__other
+msgid "other"
+msgstr "دیگر"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_fire__leave_reason
+msgid "reason for leaving the job"
+msgstr "دلیل ترک وظیفه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__reward_ids
+msgid "reward"
+msgstr "انتشارات"
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "امارت اسلامی افغانستان"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "د افغانستان اسلامی امارت"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "د بشری سرچینو ریاست"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "د سوانح آمریت"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "د مخابراتو او معلوماتی تکنالوژی وزارت"
+msgstr ""
+
+#. module: egp_hr
+#: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
+msgid "وزارت مخابرات و تکنالوژی معلوماتی"
+msgstr ""

@@ -1,0 +1,591 @@
+<odoo>
+    <data>
+        <record id="view_employee_form_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='mobile_phone']" position="before">
+                    <field name="father_name"/>
+                    <field name="grand_father_name"/>
+                </xpath>
+                <xpath expr="//field[@name='coach_id']" position="after">
+                    <field name="job_step"/>
+                    <field name="recruitment_date"/>
+                </xpath>
+                <xpath expr="//field[@name='certificate']" position="before">
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="education_location"/>
+                    <field name="university"/>
+                </xpath>
+                <xpath expr="//page[@name='public']" position="before">
+                    <page name="employee_experience" string="Employee Resume" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                        <group string="Employee's Work Experience and Education"> </group>
+                        <notebook>
+                            <page name="employee_education" string="Education" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="education_ids">
+                                    <tree>
+                                        <field name="country"/>
+                                        <field name="degree_id"/>
+                                        <field name="university_id"/>
+                                        <field name="faculty_id"/>
+                                        <field name="major"/>
+                                        <field name="education_start_date"/>
+                                        <field name="education_end_date"/>
+                                        <field name="batch_no"/>
+                                        <field name="education_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="country"/>
+                                                <field name="university_id"/>
+                                                <field name="degree_id"/>
+                                                <field name="faculty_id"/>
+                                                <field name="major"/>
+                                            </group>
+                                            <group>
+                                                <field name="education_start_date"/>
+                                                <field name="education_end_date"/>
+                                                <field name="batch_no"/>
+                                                <field name="education_remarks"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_experience" string="Work Experience"
+                                  groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="experience_ids">
+                                    <tree>
+                                        <field name="country"/>
+                                        <field name="province"/>
+                                        <field name="organization_id"/>
+                                        <field name="job_position"/>
+                                        <field name="grade"/>
+                                        <field name="step_id"/>
+                                        <field name="department"/>
+                                        <field name="status_id"/>
+                                        <field name="job_start_date"/>
+                                        <field name="job_end_date"/>
+                                        <field name="organization_type"/>
+                                        <field name="duration_days"/>
+                                        <field name="job_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="country"/>
+                                                <field name="province"/>
+                                                <field name="organization_id"/>
+                                                <field name="job_position"/>
+                                                <field name="grade"/>
+                                                <field name="step_id"/>
+                                                <field name="department"/>
+                                            </group>
+                                            <group>
+                                                <field name="status_id"/>
+                                                <field name="job_start_date"/>
+                                                <field name="job_end_date"/>
+                                                <field name="organization_type"/>
+                                                <field name="duration_days"/>
+                                                <field name="job_remarks"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_training" string="Training" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="training_ids">
+                                    <tree>
+                                        <field name="course_id"/>
+                                        <field name="training_result"/>
+                                        <field name="training_start_date"/>
+                                        <field name="training_end_date"/>
+                                        <field name="training_certification"/>
+                                        <field name="training_location"/>
+                                        <field name="training_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="course_id"/>
+                                            <field name="training_result"/>
+                                            <field name="training_start_date"/>
+                                            <field name="training_end_date"/>
+                                            <field name="training_certification"/>
+                                            <field name="training_location"/>
+                                            <field name="training_remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="my_public" string="Publication" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <div id="o_work_employee_container"
+                                     class="d-lg-flex"> <!-- These two div are used to position org_chart -->
+                                    <div id="o_work_employee_main" class="flex-grow-1">
+                                        <field name="publication_ids">
+                                            <tree>
+                                                <field name="publication_type"/>
+                                                <field name="subject"/>
+                                                <field name="publication_date"/>
+                                                <field name="no_of_pages"/>
+                                                <field name="isbn"/>
+                                            </tree>
+                                            <form>
+                                                <group>
+                                                    <field name="publication_type"/>
+                                                    <field name="subject"/>
+                                                    <field name="publication_date"/>
+                                                    <field name="no_of_pages"/>
+                                                    <field name="isbn"/>
+                                                </group>
+                                            </form>
+                                        </field>
+                                    </div>
+                                </div>
+                            </page>
+                            <page name="employee_language" string="Language" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="language_ids">
+                                    <tree>
+                                        <field name="language"/>
+                                        <field name="reading"/>
+                                        <field name="speaking"/>
+                                        <field name="listening"/>
+                                        <field name="writing"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="language"/>
+                                            <field name="reading"/>
+                                            <field name="speaking"/>
+                                            <field name="listening"/>
+                                            <field name="writing"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_language" string="Exams" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="exam_ids">
+                                    <tree>
+                                        <field name="exam_type"/>
+                                        <field name="exam_date"/>
+                                        <field name="exam_subject"/>
+                                        <field name="exam_result"/>
+                                        <field name="exam_score"/>
+                                        <field name="exam_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="exam_type"/>
+                                            <field name="exam_date"/>
+                                            <field name="exam_subject"/>
+                                            <field name="exam_result"/>
+                                            <field name="exam_score"/>
+                                            <field name="exam_remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_appraisal" string="Appraisal" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="appraisal_ids">
+                                    <tree>
+                                        <field name="appraisal_type"/>
+                                        <field name="total_marks"/>
+                                        <field name="head_details"/>
+                                        <field name="sending_date"/>
+                                        <field name="basic_objective_of_work_plan"/>
+                                        <field name="head_opinion"/>
+                                        <field name="superior_head_opinion"/>
+                                        <field name="appraisal_date"/>
+                                        <field name="is_action_plan_accommodated"/>
+                                        <field name="final_result"/>
+                                        <field name="employee_opinion"/>
+                                        <field name="is_agree_with_the_result"/>
+                                        <field name="admin_opinion"/>
+                                        <field name="employee_opinion_again"/>
+                                        <field name="supervisor_opinion"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="appraisal_type"/>
+                                                <field name="total_marks"/>
+                                                <field name="head_details"/>
+                                                <field name="sending_date"/>
+                                                <field name="basic_objective_of_work_plan"/>
+                                                <field name="head_opinion"/>
+                                                <field name="superior_head_opinion"/>
+                                                <field name="appraisal_date"/>
+                                            </group>
+                                            <group>
+                                                <field name="is_action_plan_accommodated"/>
+                                                <field name="final_result"/>
+                                                <field name="employee_opinion"/>
+                                                <field name="is_agree_with_the_result"/>
+                                                <field name="admin_opinion"/>
+                                                <field name="employee_opinion_again"/>
+                                                <field name="supervisor_opinion"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_health" string="Health" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="health_ids">
+                                    <tree>
+                                        <field name="health_status"/>
+                                        <field name="health_report_date"/>
+                                        <field name="health_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="health_status"/>
+                                            <field name="health_report_date"/>
+                                            <field name="health_remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_retirement" string="Retirement"
+                                  groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="retirement_ids">
+                                    <tree>
+                                        <field name="retirement_type_id"/>
+                                        <field name="retirement_reason_id"/>
+                                        <field name="retirement_end_date"/>
+                                        <field name="retirement_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="retirement_type_id"/>
+                                            <field name="retirement_reason_id"/>
+                                            <field name="retirement_end_date"/>
+                                            <field name="retirement_remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+
+                            <page name="employee_guarantee" string="Guarantee" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <notebook>
+                                    <page name="employee_guarantees" string="Property Guarantee"
+                                          groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                        <field name="property_guarantee_ids">
+                                            <tree>
+                                                <field name="property_province_id"/>
+                                                <field name="property_district_id"/>
+                                                <field name="property_village_id"/>
+                                                <field name="deed_no"/>
+                                                <field name="deed_date"/>
+                                                <field name="property_remarks"/>
+                                            </tree>
+                                            <form>
+                                                <group>
+                                                    <field name="property_province_id"/>
+                                                    <field name="property_district_id"/>
+                                                    <field name="property_village_id"/>
+                                                    <field name="deed_no"/>
+                                                    <field name="deed_date"/>
+                                                    <field name="property_remarks"/>
+                                                </group>
+                                            </form>
+                                        </field>
+                                    </page>
+                                    <page name="cash_guarantee" string="Cash Guarantee"
+                                          groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                        <field name="cash_guarantee_ids">
+                                            <tree>
+                                                <field name="amount_of_cash"/>
+                                                <field name="bank_name"/>
+                                                <field name="bank_slip_no"/>
+                                                <field name="cash_remarks"/>
+                                            </tree>
+                                            <form>
+                                                <group>
+                                                    <field name="amount_of_cash"/>
+                                                    <field name="bank_name"/>
+                                                    <field name="bank_slip_no"/>
+                                                    <field name="cash_remarks"/>
+                                                </group>
+                                            </form>
+                                        </field>
+                                    </page>
+                                    <page name="person_guarantee" string="Person Guarantee"
+                                          groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                        <field name="person_guarantee_ids">
+                                            <tree>
+                                                <field name="person_name"/>
+                                                <field name="last_name"/>
+                                                <field name="father_name"/>
+                                                <field name="grand_father_name"/>
+                                                <field name="job_position"/>
+                                                <field name="organization"/>
+                                                <field name="phone_no"/>
+                                                <field name="email"/>
+                                                <field name="permanent_province_id"/>
+                                                <field name="permanent_district_id"/>
+                                                <field name="permanent_village_id"/>
+                                            </tree>
+                                            <form>
+                                                <group>
+                                                    <group>
+                                                        <field name="person_name"/>
+                                                        <field name="last_name"/>
+                                                        <field name="father_name"/>
+                                                        <field name="grand_father_name"/>
+                                                        <field name="job_position"/>
+                                                        <field name="organization"/>
+                                                        <field name="phone_no"/>
+                                                        <field name="email"/>
+                                                    </group>
+                                                    <group>
+                                                        <separator name="has_address" string="Permanent Address"/>
+                                                        <field name="permanent_province_id"/>
+                                                        <field name="permanent_district_id"/>
+                                                        <field name="permanent_village_id"/>
+                                                        <separator name="has_address" string="Contemporary Address"/>
+                                                        <field name="temporary_province_id"/>
+                                                        <field name="temporary_district_id"/>
+                                                        <field name="temporary_village_id"/>
+                                                    </group>
+                                                </group>
+                                            </form>
+                                        </field>
+                                    </page>
+                                </notebook>
+                            </page>
+                            <page name="relative_information" string="Relative Information"
+                                  groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="relationship_ids">
+                                    <tree>
+                                        <field name="relationship_id"/>
+                                        <field name="relationship_name"/>
+                                        <field name="relationship_last_name"/>
+                                        <field name="relationship_father_name"/>
+                                        <field name="relationship_grand_father_name"/>
+                                        <field name="relationship_job_position"/>
+                                        <field name="relationship_contact_info"/>
+                                        <field name="relationship_identification_no"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="relationship_id"/>
+                                                <field name="relationship_name"/>
+                                                <field name="relationship_last_name"/>
+                                                <field name="relationship_father_name"/>
+                                                <field name="relationship_grand_father_name"/>
+                                                <field name="relationship_job_position"/>
+                                            </group>
+                                            <group>
+                                                <field name="relationship_email"/>
+                                                <field name="relationship_contact_info"/>
+                                                <field name="relationship_identification_no"/>
+                                                <field name="relationship_permanent_address"/>
+                                                <field name="relationship_contemporary_address"/>
+                                                <field name="relationship_property"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="document_attachment" string="Document Attachment" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="attachment_ids">
+                                    <tree>
+                                        <field name="document_type"/>
+                                        <field name="document_name"/>
+                                        <field name="document_remarks"/>
+                                        <field name="status"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="document_type"/>
+                                            <field name="document_name"/>
+                                            <field name="document_remarks"/>
+                                            <field name="status"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_fire" string="Employee Fire" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="fire_ids">
+                                    <tree>
+                                        <field name="fire_type"/>
+                                        <field name="leave_reason"/>
+                                        <field name="date_approved"/>
+                                        <field name="order_no"/>
+                                        <field name="order_date"/>
+                                        <field name="fire_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="fire_type"/>
+                                            <field name="leave_reason"/>
+                                            <field name="date_approved"/>
+                                            <field name="order_no"/>
+                                            <field name="order_date"/>
+                                            <field name="fire_remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </page>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']" position="replace">
+                    <page name="private_information" string="Private Information">
+                        <group>
+                            <group string="Permanent Address">
+                                <field name="permanent_province" placeholder="Permanent Province"/>
+                                <field name="permanent_district" placeholder="Permanent District"/>
+                                <field name="permanent_village" placeholder="Permanent Village"/>
+                                <field name="home_number" placeholder="Home Number"/>
+                                <field name="permanent_street" placeholder="Street..."/>
+
+                                <separator name="has_work_permit" string="Contemporary Address"/>
+
+                                <field name="temporary_province" placeholder="Temporary Province"/>
+                                <field name="temporary_district" placeholder="Temporary District"/>
+                                <field name="temporary_village" placeholder="Temporary Village"/>
+                                <field name="home_number" placeholder="Home Number"/>
+                                <field name="private_streets" placeholder="Street..."/>
+                                <field name="private_email" string="Email"/>
+                                <field name="private_phone" string="Phone"/>
+                                <field name="bank_account_id" context="{'default_partner_id': work_contact_id}"
+                                       options="{'no_quick_create': True}" readonly="not id"/>
+                            </group>
+
+                            <group string="Passport">
+                                <field name="passport_id"/>
+                                <field name="passport_print_date"/>
+                                <field name="passport_end_date"/>
+                                <separator name="has_work_permit" string="Work Permit"/>
+                                <field name="permit_no"/>
+                                <separator name="has_work_permit" string="Identification"/>
+                                <field name="identification_type"/>
+                                <field name="identification_no"/>
+                                <field name="identification_print_date"
+                                       invisible="identification_type != 'electronic_id_card'"/>
+                                <field name="identification_expiry_date"
+                                       invisible="identification_type != 'electronic_id_card'"/>
+                                <field name="identification_chapter"
+                                       invisible="identification_type != 'paper_id_card'"/>
+                                <field name="identification_page_no"
+                                       invisible="identification_type != 'paper_id_card'"/>
+                            </group>
+                            <group string="Citizenship">
+                                <field name="emp_nationality"/>
+                                <field name="emp_gender"/>
+                                <field name="emp_date_of_birth"/>
+                                <field name="emp_place_of_birth"/>
+                                <field name="emp_country_of_birth"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+
+                <xpath expr="//page[@name='public']" position="before">
+                    <page name="personal_information" string="Property &amp; Travel"
+                          groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                        <notebook>
+                            <page name="employee_property" string="Property" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="property_ids">
+                                    <tree>
+                                        <field name="property_type"/>
+                                        <field name="price"/>
+                                        <field name="remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="property_type"/>
+                                            <field name="price"/>
+                                            <field name="remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="employee_travel" string="Travel" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="travel_ids">
+                                    <tree>
+                                        <field name="country"/>
+                                        <field name="travel_start_date"/>
+                                        <field name="travel_end_date"/>
+                                        <field name="remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="country"/>
+                                            <field name="travel_start_date"/>
+                                            <field name="travel_end_date"/>
+                                            <field name="remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </page>
+                </xpath>
+                <xpath expr="//page[@name='public']" position="before">
+                    <page name="personal_information" string="Reward &amp; Punishments"
+                          groups="hr.group_hr_user, egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                        <notebook>
+                            <page name="employee_reward" string="Reward" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="reward_ids">
+                                    <tree>
+                                        <field name="reward_type"/>
+                                        <field name="amount_of_cash_for_reward"/>
+                                        <field name="order_no"/>
+                                        <field name="order_date"/>
+                                        <field name="organization_id"/>
+                                        <field name="reason"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="reward_type"/>
+                                            <field name="amount_of_cash_for_reward"/>
+                                            <field name="order_no"/>
+                                            <field name="order_date"/>
+                                            <field name="organization_id"/>
+                                            <field name="reason"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+
+                            <page name="employee_punishment" string="Punishment"
+                                  groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                                <field name="punishment_ids">
+                                    <tree>
+                                        <field name="punishment_type"/>
+                                        <field name="violation_type"/>
+                                        <field name="order"/>
+                                        <field name="punishment_start_date"/>
+                                        <field name="punishment_end_date"/>
+                                        <field name="punishment_date"/>
+                                        <!--                                        <field name="invalid"/>-->
+                                        <field name="punishment_remarks"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="punishment_type"/>
+                                            <field name="violation_type"/>
+                                            <field name="order"/>
+                                            <field name="punishment_start_date"/>
+                                            <field name="punishment_end_date"/>
+                                            <field name="punishment_date"/>
+
+                                            <!--                                            <field name="invalid" widget="checkbox"/>-->
+                                            <field name="punishment_remarks"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

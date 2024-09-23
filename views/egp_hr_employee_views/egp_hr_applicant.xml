@@ -1,0 +1,107 @@
+
+<odoo>
+    <data>
+        <record id ="view_emp_form_inherit" model ="ir.ui.view">
+            <field name="name">hr.emp.inherit</field>
+            <field name="model">hr.applicant</field>
+            <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form[@class='o_applicant_form']" position="replace">
+                   <form string="Jobs - Recruitment Form" class="o_applicant_form">
+            <field name="company_id" invisible="1"/>
+            <field name="application_status" invisible="1"/>
+            <field name="emp_id" invisible="1"/>
+            <field name="meeting_ids" invisible="1"/>
+            <field name="refuse_reason_id" invisible="1"/>
+            <field name="email_normalized" invisible="1"/>
+            <field name="partner_phone_sanitized" invisible="1"/>
+            <field name="partner_mobile_sanitized" invisible="1"/>
+            <field name="emp_is_active" invisible="1"/>
+            <header>
+                <button string="Create Employee" name="create_employee_from_applicant" type="object" data-hotkey="q" groups="hr_recruitment.group_hr_recruitment_user" class="o_create_employee" invisible="emp_id or not active or not date_closed"/>
+                <button string="Refuse" name="archive_applicant" type="object" invisible="not active" data-hotkey="d"/>
+                <button string="Restore" name="toggle_active" type="object" invisible="active" data-hotkey="x"/>
+                <field name="stage_id" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}" invisible="not active and not emp_id"/>
+            </header>
+            <sheet>
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_open_employee" type="object" class="oe_stat_button" icon="fa-id-card-o" groups="hr.group_hr_user" invisible="not (emp_id or emp_is_active)">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_value"><field name="employee_name" readonly="1"/></span>
+                            <span class="o_stat_text">Employee</span>
+                        </div>
+                    </button>
+                    <button name="action_applications_email" class="oe_stat_button" icon="fa-pencil" type="object" context="{'active_test': False}" invisible="application_count == 0">
+                        <field name="application_count" widget="statinfo" string="Other applications"/>
+                    </button>
+                    <button name="action_makeMeeting" class="oe_stat_button" icon="fa-calendar" type="object" invisible="not id">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_text"><field name="meeting_display_text"/></span>
+                            <span class="o_stat_value"><field name="meeting_display_date" readonly="1"/></span>
+                        </div>
+                    </button>
+                </div>
+                <widget name="web_ribbon" title="Refused" bg_color="text-bg-danger" invisible="application_status != 'refused'"/>
+                <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="application_status != 'archived'"/>
+                <widget name="web_ribbon" title="Hired" invisible="application_status != 'hired'"/>
+                <field name="active" invisible="1"/>
+                <field name="legend_normal" invisible="1"/>
+                <field name="legend_blocked" invisible="1"/>
+                <field name="legend_done" invisible="1"/>
+                <div class="oe_title pe-0">
+                    <label for="name" class="oe_edit_only"/>
+                    <h1 class="d-flex justify-content-between align-items-center">
+                        <field name="name" options="{'line_breaks': False}" widget="text" placeholder="e.g. Sales Manager 2 year experience"/>
+                        <field name="kanban_state" widget="state_selection"/>
+                    </h1>
+                    <h2 class="o_row">
+                        <div>
+                            <label for="partner_name" class="oe_edit_only"/>
+                            <field name="partner_name" placeholder="e.g. John Doe"/>
+                        </div>
+                    </h2>
+                </div>
+                <group>
+                    <group>
+                        <field name="partner_id" invisible="1"/>
+                        <field name="refuse_reason_id" invisible="active"/>
+                        <field name="email_from" widget="email"/>
+                        <field name="email_cc" groups="base.group_no_one"/>
+                        <field name="partner_phone" widget="phone"/>
+                        <field name="partner_mobile" widget="phone"/>
+                        <field name="type_id" placeholder="Degree"/>
+                    </group>
+                    <group>
+                        <field name="interviewer_ids" options="{'no_create': True, 'no_create_edit': True}" widget="many2many_avatar_user"/>
+                        <field name="user_id" widget="many2one_avatar_user"/>
+                        <field name="date_closed" invisible="not date_closed"/>
+                        <field name="priority" widget="priority"/>
+
+                        <field name="availability" placeholder="Directly Available"/>
+                        <field name="categ_ids" placeholder="Tags" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
+                    </group>
+                    <group string="Job">
+                        <field name="job_id"/>
+                        <field name="department_id"/>
+                        <field name="company_id" groups="base.group_multi_company" invisible="1" options="{&quot;no_open&quot;:True}"/>
+                    </group>
+                </group>
+                <field name="applicant_properties" columns="2"/>
+                <notebook>
+                    <page string="Application Summary" name="application_summary">
+                        <field name="description" placeholder="Motivations..."/>
+                    </page>
+                </notebook>
+            </sheet>
+            <div class="o_attachment_preview" groups="hr_recruitment.group_applicant_cv_display"/>
+            <div class="oe_chatter">
+                <field name="message_follower_ids"/>
+                <field name="activity_ids"/>
+                <field name="message_ids" options="{'open_attachments': True}"/>
+            </div>
+          </form>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

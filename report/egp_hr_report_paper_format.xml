@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Define the A4 paper format -->
+        <record id="report_paperformat_a4" model="report.paperformat">
+            <field name="name">Job Summary Report Format</field>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="margin_top">20</field> <!-- Decreased top margin in mm -->
+            <field name="margin_bottom">40</field> <!-- Bottom margin in mm -->
+            <field name="margin_left">10</field> <!-- Left margin in mm -->
+            <field name="margin_right">10</field> <!-- Right margin in mm -->
+            <field name="header_spacing">35</field> <!-- Right margin in mm -->
+            <field name="dpi">90</field>
+        </record>
+    </data>
+</odoo>

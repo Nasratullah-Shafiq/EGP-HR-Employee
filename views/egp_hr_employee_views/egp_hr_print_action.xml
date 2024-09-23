@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="egp_hr.hr_employee_position_report" model="ir.actions.report">
+            <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
+    </data>
+</odoo>
+

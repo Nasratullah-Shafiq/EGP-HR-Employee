@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+<!--        <record id="egp_hr_org_structure_default_user_amir" model="res.users">-->
+<!--            <field name="name"><![CDATA[امر تشکیل]]></field>-->
+<!--            <field name="login">t_amir@gmail.com</field>-->
+<!--            <field name="password">123</field>-->
+<!--            <field name="groups_id"-->
+<!--                   eval="[(4, ref('base.group_user')), (4, ref('egp_hr_org_structure.group_tashkil_ameriat'))]"/>-->
+<!--        </record>-->
+
+
+        <record id="egp_hr_employee_default_user" model="res.users">
+            <field name="name">
+                <![CDATA[ امر سوانح ]]>
+            </field>
+            <field name="login">employee@gmail.com</field>
+            <field name="password">123</field>
+            <field name="groups_id"
+                   eval="[(4, ref('base.group_user')), (4, ref('egp_hr.group_employee_officers'))]"/>
+            <!--  Add other user fields as required  -->
+        </record>
+
+        <record id="egp_hr_employee_default_expert_user" model="res.users">
+            <field name="name">
+                <![CDATA[ کارشناس سوانح ]]>
+            </field>
+            <field name="login">karshenas@gmail.com</field>
+            <field name="password">123</field>
+            <field name="groups_id"
+                   eval="[(4, ref('base.group_user')), (4, ref('egp_hr.group_employee_expert'))]"/>
+            <!--  Add other user fields as required  -->
+        </record>
+
+        <record id="employee_qdp" model="hr.employee">
+            <field name="name">نصرت الله شفیق</field>
+            <!--            <field name="user_id" ref="base.user_demo"/>-->
+            <!--            <field name="department_id" ref="dep_rd"/>-->
+            <!--            <field name="parent_id" ref="employee_admin"/>-->
+            <!--            <field name="private_street">361-7936 Feugiat St.</field>-->
+            <!--            <field name="private_zip">58521</field>-->
+            <!--            <field name="private_city">Williston</field>-->
+            <!--            <field name="private_country_id" ref="base.us"/>-->
+            <!--            <field name="private_phone">+1 555-555-5757</field>-->
+            <!--            <field name="private_email">demo@yourcompany.example.com</field>-->
+            <!--            <field name="job_id" ref="hr.job_developer"/>-->
+            <!--            <field name="job_title">Experienced Developer</field>-->
+            <!--            <field name="category_ids" eval="[Command.set([ref('employee_category_4')])]"/>-->
+            <!--            <field name="work_location_id" ref="work_location_1"/>-->
+            <!--            <field name="work_phone">+3281813700</field>-->
+            <!--            <field name="work_contact_id" ref="hr.work_contact_qdp"/>-->
+            <field name="create_date">2010-01-01 00:00:00</field>
+        </record>
+    </data>
+</odoo>
