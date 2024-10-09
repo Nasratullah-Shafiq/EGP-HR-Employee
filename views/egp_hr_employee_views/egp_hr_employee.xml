@@ -13,6 +13,14 @@
                     <field name="job_step"/>
                     <field name="recruitment_date"/>
                 </xpath>
+
+                <xpath expr="//page[position()=2]" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//page[@name='public']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
                 <xpath expr="//field[@name='certificate']" position="before">
                     <field name="start_date"/>
                     <field name="end_date"/>
@@ -435,7 +443,7 @@
                 </xpath>
 
                 <xpath expr="//page[@name='personal_information']" position="replace">
-                    <page name="private_information" string="Private Information">
+                    <page name="private_information" string="Private Information" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
                         <group>
                             <group string="Permanent Address">
                                 <field name="permanent_province" placeholder="Permanent Province"/>
@@ -529,7 +537,7 @@
                 </xpath>
                 <xpath expr="//page[@name='public']" position="before">
                     <page name="personal_information" string="Reward &amp; Punishments"
-                          groups="hr.group_hr_user, egp_hr.group_employee_officers, egp_hr.group_employee_expert">
+                          groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
                         <notebook>
                             <page name="employee_reward" string="Reward" groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
                                 <field name="reward_ids">
