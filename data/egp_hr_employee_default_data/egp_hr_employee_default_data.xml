@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-
-<!--        <record id="egp_hr_org_structure_default_user_amir" model="res.users">-->
-<!--            <field name="name"><![CDATA[امر تشکیل]]></field>-->
-<!--            <field name="login">t_amir@gmail.com</field>-->
-<!--            <field name="password">123</field>-->
-<!--            <field name="groups_id"-->
-<!--                   eval="[(4, ref('base.group_user')), (4, ref('egp_hr_org_structure.group_tashkil_ameriat'))]"/>-->
-<!--        </record>-->
-
-
         <record id="egp_hr_employee_default_user" model="res.users">
             <field name="name">
                 <![CDATA[ امر سوانح ]]>
