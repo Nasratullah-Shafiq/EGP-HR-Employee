@@ -88,6 +88,12 @@
     <record id="hr.menu_config_recruitment" model="ir.ui.menu">
         <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
     </record>
+<!--  Discuss menu visibility only for Administration Access Rights Group  -->
+    <record id="mail.menu_root_discuss" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('base.group_erp_manager'))]"/>
+    </record>
+
+
 
     <!--    Employee/Configuration/Employee/Department menu visibility for Officer/Amir-->
     <record id="hr.menu_hr_department_tree" model="ir.ui.menu">
