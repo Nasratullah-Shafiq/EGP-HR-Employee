@@ -127,6 +127,15 @@
     <record id="hr.menu_config_employee" model="ir.ui.menu">
         <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
     </record>
+    <!--    Employee HR Root menu visibility for Officer/Amir-->
+    <record id="hr.menu_hr_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('egp_hr.group_employee_officers')])]"/>
+    </record>
+
+    <!--    Employee HR Root menu visibility for Expert/ Karshenas    -->
+    <record id="hr.menu_hr_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('egp_hr.group_employee_expert')])]"/>
+    </record>
 
     <!--    Employee/Configuration/Recruitment menu visibility for Officer/Amir-->
     <record id="hr.menu_config_recruitment" model="ir.ui.menu">
@@ -142,11 +151,6 @@
     <record id="hr.menu_hr_department_tree" model="ir.ui.menu">
         <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
     </record>
-
-    <!--    Employee/Configuration/Job Position menu visibility for Job Desp. Writer-->
-<!--    <record id="hr.menu_view_hr_job" model="ir.ui.menu">-->
-<!--        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>-->
-<!--    </record>-->
 
     <record id="hr.menu_hr_employee_payroll" model="ir.ui.menu">
         <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
