@@ -11,7 +11,7 @@ class HrEmployeeInherit(models.Model):
 
     job_step = fields.Selection([('1st', '1st'), ('2nd', '2nd'), ('3rd', '3rd'), ('4th', '4th'), ('5th', '5th')],
                                 string='Step')
-    message_main_attachment_id = fields.Many2one(groups="base.group_erp_manager,egp_hr.group_employee_officers,egp_hr.group_employee_expert")
+    message_main_attachment_id = fields.Many2one(groups="base.group_erp_manager,egp_hr.group_employee_officers,egp_hr.group_employee_expert, egp_hr_recruitment.group_recruitment_id_card_manager")
     # message_main_attachment_id = fields.Many2one(
         # groups="base.group_erp_manager,egp_hr.group_employee_officers,egp_hr_recruitment.group_recruitment_amir,egp_hr_recruitment.group_recruitment_Karshanas")
     recruitment_date = fields.Date(string='Recruitment Date')
