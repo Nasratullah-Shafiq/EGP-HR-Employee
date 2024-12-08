@@ -122,7 +122,6 @@
         <record id="hr_skills.hr_resume_line_type_menu" model="ir.ui.menu">
             <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
         </record>
-
         <!-- apps menu invisible for  Officer/Amir  and assigned to administrator  -->
         <record id="base.menu_management" model="ir.ui.menu">
             <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
