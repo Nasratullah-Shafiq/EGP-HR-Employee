@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 13:21+0000\n"
-"PO-Revision-Date: 2024-11-04 13:21+0000\n"
+"POT-Creation-Date: 2024-09-23 10:16+0000\n"
+"PO-Revision-Date: 2024-09-23 10:16+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr ""
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.print_employee_badge
 msgid "12345678901"
-msgstr "۱۲۳۴۵۶۷۸۹۰۱"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__1st
@@ -181,12 +181,12 @@ msgstr "کارمند"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "<span>Km</span>"
-msgstr "کيلو متر"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_hr_job_form
 msgid "<span>new Employees</span>"
-msgstr "کارمند جدید"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.constraint,message:hr.constraint_hr_employee_user_uniq
@@ -315,15 +315,15 @@ msgstr "آدرس"
 msgid "Address and Contacts"
 msgstr "آدرس ها و تماس ها"
 
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__admin_opinion
+msgid "Admin Opinion"
+msgstr "نظریه مدیر"
+
 #. module: hr
 #: model:hr.department,name:hr.dep_administration
 msgid "Administration"
 msgstr "مدیریت"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__administrative
-msgid "Administrative"
-msgstr "اداری"
 
 #. module: hr
 #: model:res.groups,name:hr.group_hr_manager
@@ -434,7 +434,7 @@ msgstr "آرشیف"
 #: model_terms:ir.ui.view,arch_db:hr.view_hr_job_form
 #: model_terms:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Archived"
-msgstr "آرشیف شده"
+msgstr "بایگانی شده"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__َarticle
@@ -518,67 +518,16 @@ msgstr ""
 msgid "Away"
 msgstr "دور از کار"
 
-#. modules: egp_hr, hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__bachelor
+#. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__certificate__bachelor
 msgid "Bachelor"
 msgstr "لیسانس"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__badakhshan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__badakhshan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__badakhshan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__badakhshan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__badakhshan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__badakhshan
-msgid "Badakhshan"
-msgstr "بدخشان"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__barcode
 #: model:ir.model.fields,field_description:hr.field_res_users__barcode
 msgid "Badge ID"
 msgstr "شناسه نشان"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__badghis
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__badghis
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__badghis
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__badghis
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__badghis
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__badghis
-msgid "Badghis"
-msgstr "بادغیس"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__baghlan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__baghlan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__baghlan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__baghlan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__baghlan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__baghlan
-msgid "Baghlan"
-msgstr "بغلان"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__balkh
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__balkh
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__balkh
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__balkh
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__balkh
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__balkh
-msgid "Balkh"
-msgstr "بلخ"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__bamyan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__bamyan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__bamyan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__bamyan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__bamyan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__bamyan
-msgid "Bamyan"
-msgstr "بامیان"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__bank_account_id
@@ -635,11 +584,6 @@ msgstr "اهداف اساسی پلان کاری"
 msgid "Batch No"
 msgstr "نمبر مکتوب"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__behavioral
-msgid "Behavioral"
-msgstr "سلوکی"
-
 #. module: hr
 #. odoo-javascript
 #: code:addons/hr/static/src/components/background_image/background_image.xml:0
@@ -694,11 +638,6 @@ msgstr "تصدیق نامه"
 #: model:ir.actions.act_window,name:hr.res_users_action_my
 msgid "Change my Preferences"
 msgstr "تغییر ترجیحات من"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__change_of_duty
-msgid "Change of Duty"
-msgstr "تبدیل"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_chapter
@@ -833,7 +772,7 @@ msgstr "امتحان کمپیوتری"
 #. module: hr
 #: model:ir.model,name:hr.model_res_config_settings
 msgid "Config Settings"
-msgstr "تنظیمات پیکربندی"
+msgstr "عیار سازی تنظیمات"
 
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_human_resources_configuration
@@ -866,7 +805,7 @@ msgstr "نام تماس"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__emergency_phone
 #: model:ir.model.fields,field_description:hr.field_res_users__emergency_phone
 msgid "Contact Phone"
-msgstr "شماره تماس"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_contemporary_address
@@ -886,11 +825,6 @@ msgstr "ادامه وظیفه در بست و قدم فعلی و معرفی شد�
 msgid "Continuation of duty in the current position"
 msgstr "ادامه وظیفه در بست فعلی"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__contract_cancelled
-msgid "Contract Cancelled"
-msgstr "فسخ قرار داد"
-
 #. module: hr
 #: model:ir.model,name:hr.model_hr_contract_type
 msgid "Contract Type"
@@ -899,15 +833,16 @@ msgstr "نوع قرارداد"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.hr_contract_type_view_tree
 msgid "Contract Types"
-msgstr "نوع قرارداد"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__employee_type__contractor
 msgid "Contractor"
-msgstr "قرارداری"
+msgstr ""
 
 #. modules: egp_hr, hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_education__country
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__country
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__country
 #: model:ir.model.fields,field_description:hr.field_hr_contract_type__country_id
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
@@ -947,7 +882,7 @@ msgstr "ایجاد تاریخ"
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
 #: model_terms:ir.ui.view,arch_db:hr.view_users_simple_form_inherit_hr
 msgid "Create Employee"
-msgstr "کارمند ساخته شود"
+msgstr ""
 
 #. module: hr
 #. odoo-python
@@ -959,24 +894,20 @@ msgid "Create User"
 msgstr "ایجاد کاربر"
 
 #. module: hr
+#: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid "Create a new department"
 msgstr "ایجاد یک دپارتمان جدید"
 
 #. module: hr
-#: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
-msgid "Create a new department!"
-msgstr "ديپارتمنت جديد را ايجاد کنيد"
-
-#. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_contract_type_action
 msgid "Create a new employment type"
-msgstr "نوع ديپارتمنت را ايجاد کنيد"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_work_location_action
 msgid "Create a new work location"
-msgstr "نوع کاری را ايجاد کنيد"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form
@@ -987,6 +918,7 @@ msgstr "ایجاد کارمند"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_course__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_district__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__create_uid
@@ -1012,6 +944,7 @@ msgstr "ایجاد کارمند"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_reward__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_status__create_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_training__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__create_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_university__create_uid
@@ -1032,6 +965,7 @@ msgstr "ساخته شده توسط"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_course__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_district__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__create_date
@@ -1057,6 +991,7 @@ msgstr "ساخته شده توسط"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_reward__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_status__create_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_training__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__create_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_university__create_date
@@ -1081,11 +1016,6 @@ msgstr "ارز"
 #: model:ir.model.fields,field_description:hr.field_hr_job__no_of_employee
 msgid "Current Number of Employees"
 msgstr "تعداد کارمندان فعلی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__darul_uloom
-msgid "Darul Uloom"
-msgstr "دارالعلوم"
 
 #. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
@@ -1120,16 +1050,6 @@ msgid "Date of Issue"
 msgstr "تاریخ صدور حکم"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__daykundi
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__daykundi
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__daykundi
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__daykundi
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__daykundi
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__daykundi
-msgid "Daykundi"
-msgstr "دایکندی"
-
-#. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__deed_date
 msgid "Deed Date"
 msgstr "تاریخ قباله"
@@ -1148,7 +1068,8 @@ msgid "Default departure reasons cannot be deleted."
 msgstr "دلایل ترک کار پیش فرض را نمی توان حذف کرد."
 
 #. module: egp_hr
-#: model:ir.model.fields,field_description:egp_hr.field_employee_education__degree
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_education__degree_id
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
 msgid "Degree"
@@ -1259,15 +1180,11 @@ msgstr "تادیب (تبدیل به ولایات)"
 msgid "Discussion Channel"
 msgstr "کانال گفتگو"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__dismissal_of_duty
-msgid "Dismissal of Duty"
-msgstr "حذف بست فعلی"
-
 #. modules: egp_hr, hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_course__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_district__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__display_name
@@ -1293,6 +1210,7 @@ msgstr "حذف بست فعلی"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_reward__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_status__display_name
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_training__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__display_name
 #: model:ir.model.fields,field_description:egp_hr.field_employee_university__display_name
@@ -1332,7 +1250,7 @@ msgstr "مطلقه"
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__certificate__doctor
 msgid "Doctor"
-msgstr "دوکتور"
+msgstr "دکتر"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__attachment_ids
@@ -1360,7 +1278,7 @@ msgstr "نوعیت اسناد"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__driving_license
 msgid "Driving License"
-msgstr "لايسنس راه ننده ګی"
+msgstr ""
 
 #. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
@@ -1374,20 +1292,12 @@ msgstr "مدت خدمت"
 
 #. module: egp_hr
 #: model:res.groups,name:egp_hr.group_employee_expert
-msgid "EGP-HR Employee Expert / Create all employees detail"
+msgid "EGP-HR Employee Expert / Create all employees detail "
 msgstr ""
 
 #. module: egp_hr
 #: model:res.groups,name:egp_hr.group_employee_officers
-msgid "EGP-HR Employee officer/ Create all employees details"
-msgstr ""
-
-#. module: hr
-#: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
-msgid ""
-"EGP-HR department structure is used to manage all documents\n"
-"                related to employees by departments: expenses, timesheets,\n"
-"                time off, recruitments, etc."
+msgid "EGP-HR Employee officer/ Create all employees details "
 msgstr ""
 
 #. modules: egp_hr, hr
@@ -1402,21 +1312,6 @@ msgstr "تحصیل"
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "Education Place"
 msgstr "محل تحصیل"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__educational
-msgid "Educational"
-msgstr "تعلیمی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__eight_rank
-msgid "Eight Rank"
-msgstr "رتبه هشتم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__eight_step
-msgid "Eight Step"
-msgstr "قدم هشتم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__identification_type__electronic_id_card
@@ -1501,12 +1396,17 @@ msgstr "دسته‌بندی کارمند"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users__employee_count
 msgid "Employee Count"
-msgstr "تعداد کارمندان"
+msgstr "تعداد کارکنان"
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_course
 msgid "Employee Course"
 msgstr "کورس"
+
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_degree
+msgid "Employee Degree"
+msgstr "درجه تحصیل"
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_district
@@ -1516,13 +1416,13 @@ msgstr "ولسوالی"
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_document
 msgid "Employee Document"
-msgstr "اسناد کارمند"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_document_type
 #: model:ir.model,name:egp_hr.model_employee_leave_reason
 msgid "Employee Document Type"
-msgstr "نوعیت اسناد کارمند"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_config_settings__hr_employee_self_edit
@@ -1591,12 +1491,12 @@ msgstr "اداره"
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_person_guarantee
 msgid "Employee Person Guarantee"
-msgstr "ضمانت شخص"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_company__employee_properties_definition
 msgid "Employee Properties"
-msgstr "دارایی کارمندان"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_property
@@ -1616,7 +1516,7 @@ msgstr "دلیل"
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_relationship
 msgid "Employee Relationship"
-msgstr "روابط"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_relatives
@@ -1648,6 +1548,11 @@ msgstr "هکافات"
 msgid "Employee Status"
 msgstr "حالت"
 
+#. module: egp_hr
+#: model:ir.model,name:egp_hr.model_employee_step
+msgid "Employee Step"
+msgstr "رتبه / قدم"
+
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_categ_form
 #: model:ir.model.fields,field_description:hr.field_res_users__category_ids
@@ -1661,7 +1566,7 @@ msgstr "برچسب‌های کارمند"
 #: code:addons/hr/static/src/views/archive_employee_hook.js:0
 #, python-format
 msgid "Employee Termination"
-msgstr "حذف بست فعلی"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_training
@@ -1672,7 +1577,7 @@ msgstr "آموزش"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__employee_type
 #: model:ir.model.fields,field_description:hr.field_res_users__employee_type
 msgid "Employee Type"
-msgstr "نوعیت کارمند"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_university
@@ -1693,7 +1598,7 @@ msgstr "قریه"
 #: model:ir.model.fields,help:hr.field_hr_employee__bank_account_id
 #: model:ir.model.fields,help:hr.field_res_users__employee_bank_account_id
 msgid "Employee bank account to pay salaries"
-msgstr "حساب بانکی کارمندان برای پرداخت معاش"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_punishment
@@ -1726,7 +1631,7 @@ msgstr "تجارب کاری و تحصیلات کارمند"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users__employee_resource_calendar_id
 msgid "Employee's Working Hours"
-msgstr "ساعت های کاری"
+msgstr ""
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.act_employee_from_department
@@ -1755,7 +1660,7 @@ msgstr "کارمندان"
 #: model:ir.model.fields,field_description:hr.field_res_partner__employees_count
 #: model:ir.model.fields,field_description:hr.field_res_users__employees_count
 msgid "Employees Count"
-msgstr "تعداد کارمندان"
+msgstr ""
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_employee_tree
@@ -1771,13 +1676,13 @@ msgstr "برچسب‌های کارمندان"
 #: model:ir.model.fields,field_description:hr.field_hr_job__contract_type_id
 #: model_terms:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Employment Type"
-msgstr "نوع وظیفه"
+msgstr ""
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.hr_contract_type_action
 #: model:ir.ui.menu,name:hr.menu_view_hr_contract_type
 msgid "Employment Types"
-msgstr "انواع وظیفه"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__encouragement_of_civil_services_workers
@@ -1885,27 +1790,7 @@ msgstr "پوهنڅۍ"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Family Status"
-msgstr "حالت فامیل"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__farah
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__farah
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__farah
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__farah
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__farah
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__farah
-msgid "Farah"
-msgstr "فراه"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__faryab
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__faryab
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__faryab
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__faryab
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__faryab
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__faryab
-msgid "Faryab"
-msgstr "فاریاب"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__father_name
@@ -1930,25 +1815,10 @@ msgid "Field of Study"
 msgstr "رشته تحصیلی"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fifth_rank
-msgid "Fifth Rank"
-msgstr "رتبه پنجم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fifth_step
-msgid "Fifth Step"
-msgstr "قدم پنچم"
-
-#. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__final_result
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "Final Result"
 msgstr "نتیجه نهایی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__fine
-msgid "Fine"
-msgstr "جریمه نقدی"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__fire_ids
@@ -1964,16 +1834,6 @@ msgstr "نوعیت انفکاک"
 #: model:hr.departure.reason,name:hr.departure_fired
 msgid "Fired"
 msgstr "اخراج شده"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__first_rank
-msgid "First Rank"
-msgstr "رتبه اول"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__first_step
-msgid "First Step"
-msgstr "قدم اول"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__first_degree_of_appreciation
@@ -2009,25 +1869,15 @@ msgid ""
 "auto-subscription."
 msgstr ""
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fourth_rank
-msgid "Fourth Rank"
-msgstr "رتبه چهارم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fourth_step
-msgid "Fourth Step"
-msgstr "قدم چهارم"
-
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__employee_type__freelance
 msgid "Freelancer"
-msgstr "فریلانسر"
+msgstr ""
 
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_full_time
 msgid "Full-Time"
-msgstr "فول تایم"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
@@ -2051,30 +1901,10 @@ msgstr "جنسیت"
 msgid "Generate"
 msgstr "ایجاد"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__ghazni
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__ghazni
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__ghazni
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__ghazni
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__ghazni
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__ghazni
-msgid "Ghazni"
-msgstr "غزنی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__ghor
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__ghor
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__ghor
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__ghor
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__ghor
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__ghor
-msgid "Ghor"
-msgstr "غور"
-
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.hr_departure_wizard_view_form
 msgid "Give more details about the reason of archiving the employee."
-msgstr "در مورد دلیل آرشیف کردن کارمند جزئیات بیشتر بدهید"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_health__health_status__good
@@ -2134,7 +1964,7 @@ msgstr "دپارتمان‌های منابع انسانی"
 #. module: hr
 #: model:ir.actions.server,name:hr.ir_cron_data_check_work_permit_validity_ir_actions_server
 msgid "HR Employee: check work permit validity"
-msgstr "کارمند منابع بشری: اعتبار جواز کار را بررسی کنید"
+msgstr ""
 
 #. module: hr
 #. odoo-javascript
@@ -2148,7 +1978,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "HR Settings"
-msgstr "تنظیمات"
+msgstr "د انسانی منابعو تنظیمات"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__has_message
@@ -2181,26 +2011,6 @@ msgid "Health"
 msgstr "صحت"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__helmand
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__helmand
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__helmand
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__helmand
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__helmand
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__helmand
-msgid "Helmand"
-msgstr "هلمند"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__herat
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__herat
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__herat
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__herat
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__herat
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__herat
-msgid "Herat"
-msgstr "هرات"
-
-#. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
 msgid "Hired"
 msgstr "استخدام شده"
@@ -2209,11 +2019,6 @@ msgstr "استخدام شده"
 #: model:ir.model.fields,field_description:hr.field_hr_job__no_of_hired_employee
 msgid "Hired Employees"
 msgstr "کارمندان استخدام شده"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__holiday
-msgid "Holiday"
-msgstr "رخصتی"
 
 #. modules: egp_hr, hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__home
@@ -2277,6 +2082,7 @@ msgstr "منابع انسانی"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_course__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_district__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__id
@@ -2302,6 +2108,7 @@ msgstr "منابع انسانی"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_reward__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_status__id
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_training__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_university__id
@@ -2316,7 +2123,7 @@ msgstr "منابع انسانی"
 #: model:ir.model.fields,field_description:hr.field_hr_job__id
 #: model:ir.model.fields,field_description:hr.field_hr_work_location__id
 msgid "ID"
-msgstr "آی دی"
+msgstr "شناسه"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__identification_type
@@ -2326,7 +2133,7 @@ msgstr "تذکره"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__id_card
 msgid "ID Card Copy"
-msgstr "کاپی آی دی کارت"
+msgstr ""
 
 #. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
@@ -2526,7 +2333,7 @@ msgstr "موقعیت های شغلی"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_hr_job_form
 msgid "Job Summary"
-msgstr "لایحه وظایف"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__job_title
@@ -2547,86 +2354,6 @@ msgstr "شغل"
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_emp_form_inherit
 msgid "Jobs - Recruitment Form"
 msgstr ""
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__jowzjan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__jowzjan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__jowzjan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__jowzjan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__jowzjan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__jowzjan
-msgid "Jowzjan"
-msgstr "جوزجان"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__kabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__kabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__kabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__kabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__kabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__kabul
-msgid "Kabul"
-msgstr "کابل"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__kandahar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__kandahar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__kandahar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__kandahar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__kandahar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__kandahar
-msgid "Kandahar"
-msgstr "کندهار"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__kapisa
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__kapisa
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__kapisa
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__kapisa
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__kapisa
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__kapisa
-msgid "Kapisa"
-msgstr "کاپیسا"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__khost
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__khost
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__khost
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__khost
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__khost
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__khost
-msgid "Khost"
-msgstr "خوست"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__kunar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__kunar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__kunar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__kunar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__kunar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__kunar
-msgid "Kunar"
-msgstr "کنر"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__kunduz
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__kunduz
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__kunduz
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__kunduz
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__kunduz
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__kunduz
-msgid "Kunduz"
-msgstr "کندز"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__laghman
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__laghman
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__laghman
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__laghman
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__laghman
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__laghman
-msgid "Laghman"
-msgstr "لغمان"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__land
@@ -2681,6 +2408,7 @@ msgstr "تخلص"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_course__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_district__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__write_uid
@@ -2706,6 +2434,7 @@ msgstr "تخلص"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_reward__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_status__write_uid
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_training__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__write_uid
 #: model:ir.model.fields,field_description:egp_hr.field_employee_university__write_uid
@@ -2726,6 +2455,7 @@ msgstr "آخرین آپدیت شده توسط"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_course__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_degree__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_district__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_document_type__write_date
@@ -2751,6 +2481,7 @@ msgstr "آخرین آپدیت شده توسط"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_retirement_type__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_reward__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_status__write_date
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_training__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_travel__write_date
 #: model:ir.model.fields,field_description:egp_hr.field_employee_university__write_date
@@ -2806,16 +2537,6 @@ msgstr "مکان"
 #: model:ir.model.fields,field_description:hr.field_hr_work_location__location_number
 msgid "Location Number"
 msgstr ""
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__logar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__logar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__logar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__logar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__logar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__logar
-msgid "Logar"
-msgstr "لوگر"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__magazine
@@ -2880,8 +2601,7 @@ msgstr "مارکیت"
 msgid "Married"
 msgstr "متاهل"
 
-#. modules: egp_hr, hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__master
+#. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__certificate__master
 msgid "Master"
 msgstr "کارشناسی ارشد"
@@ -2901,7 +2621,7 @@ msgstr "مدال"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_base__member_of_department
 #: model:ir.model.fields,field_description:hr.field_hr_employee_public__member_of_department
 msgid "Member of department"
-msgstr "اعضای دیپارتمنت"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__member_ids
@@ -2911,7 +2631,7 @@ msgstr "اعضا"
 #. module: hr
 #: model:ir.model,name:hr.model_ir_ui_menu
 msgid "Menu"
-msgstr "مینو"
+msgstr "منو"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__message_has_error
@@ -2938,11 +2658,6 @@ msgid "Ministry of Communication and IT"
 msgstr ""
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__missing_card
-msgid "Missing Card"
-msgstr "مفقودی کارت هویت"
-
-#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__monthly
 msgid "Monthly"
 msgstr "ماهانه"
@@ -2956,11 +2671,6 @@ msgstr "انگیزه"
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__movable_property
 msgid "Movable Property"
 msgstr "دارایی منقول"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__murder
-msgid "Murder"
-msgstr "قتل"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__my_activity_date_deadline
@@ -3009,16 +2719,6 @@ msgid "Name"
 msgstr "اسم"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__nangarhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__nangarhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__nangarhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__nangarhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__nangarhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__nangarhar
-msgid "Nangarhar"
-msgstr "ننگرهار"
-
-#. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__emp_nationality
 msgid "Nationality"
 msgstr "کشور"
@@ -3032,7 +2732,7 @@ msgstr "ملیت (کشور)"
 #: model_terms:ir.ui.view,arch_db:hr.hr_employee_view_graph
 #: model_terms:ir.ui.view,arch_db:hr.hr_employee_view_pivot
 msgid "New Employees Over Time"
-msgstr "اضافی کاری کارمندان جديدالتقرر"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__newly_hired
@@ -3041,7 +2741,7 @@ msgstr "اضافی کاری کارمندان جديدالتقرر"
 #: model_terms:ir.ui.view,arch_db:hr.hr_employee_public_view_search
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
 msgid "Newly Hired"
-msgstr "تازه استخدام شده"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__activity_calendar_event_id
@@ -3064,26 +2764,6 @@ msgid "Next Activity Type"
 msgstr "نوع فعالیت بعدی"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__nimroz
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__nimroz
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__nimroz
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__nimroz
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__nimroz
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__nimroz
-msgid "Nimroz"
-msgstr "نیمروز"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__ninth_rank
-msgid "Ninth Rank"
-msgstr "رتبه نهم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__ninth_step
-msgid "Ninth Step"
-msgstr "قدم نهم"
-
-#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__basic_objective_of_work_plan__no
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__is_action_plan_accommodated__no
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__is_agree_with_the_result__no
@@ -3093,7 +2773,7 @@ msgstr "نخیر"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_categ_form
 msgid "No Tags found ! Let's create one"
-msgstr "هیچ تگ یافت نشد! بیایید یکی بسازیم"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_publication__no_of_pages
@@ -3142,7 +2822,7 @@ msgstr "تعداد اقدامات"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__children
 #: model:ir.model.fields,field_description:hr.field_res_users__children
 msgid "Number of Dependent Children"
-msgstr "تعداد اطفال"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job__no_of_employee
@@ -3167,7 +2847,7 @@ msgstr "تعداد کارمندان استخدام شده برای این موق
 #: model:ir.model.fields,help:hr.field_hr_employee__message_needaction_counter
 #: model:ir.model.fields,help:hr.field_hr_job__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "تعداد پیام هایی که نیاز به اقدام دارند"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_department__message_has_error_counter
@@ -3181,16 +2861,6 @@ msgstr "تعداد پیامهای با خطای تحویل"
 msgid "Number of new employees you expect to recruit."
 msgstr "تعداد کارمندان جدیدی که می‌خواهید استخدام کنید"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__nuristan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__nuristan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__nuristan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__nuristan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__nuristan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__nuristan
-msgid "Nuristan"
-msgstr "نورستان"
-
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid ""
@@ -3203,9 +2873,20 @@ msgstr ""
 "                مرخصی، استخدام، و غیره."
 
 #. module: hr
+#: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
+msgid ""
+"Odoo's department structure is used to manage all documents\n"
+"                related to employees by departments: expenses, timesheets,\n"
+"                time off, recruitments, etc."
+msgstr ""
+"ساختار دپارتمان اودو برای مدیریت تمام مدارک استفاده می شود\n"
+"                مربوط به کارکنان توسط دپارتمان‌ها: هزینه ها، برگه کارکرد زمانی،\n"
+"                مرخصی، استخدام، و غیره."
+
+#. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_work_location__location_type__office
 msgid "Office"
-msgstr "دفتر"
+msgstr ""
 
 #. module: hr
 #: model:res.groups,name:hr.group_hr_user
@@ -3308,36 +2989,6 @@ msgid "Page No"
 msgstr "نمبر صفحه"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__paktia
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__paktia
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__paktia
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__paktia
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__paktia
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__paktia
-msgid "Paktia"
-msgstr "پکتیا"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__paktika
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__paktika
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__paktika
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__paktika
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__paktika
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__paktika
-msgid "Paktika"
-msgstr "پکتیکا"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__panjshir
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__panjshir
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__panjshir
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__panjshir
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__panjshir
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__panjshir
-msgid "Panjshir"
-msgstr "پنجشیر"
-
-#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__identification_type__paper_id_card
 msgid "Paper ID card"
 msgstr "تذکره کاغذی"
@@ -3355,23 +3006,13 @@ msgstr "مسیر مادر"
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_part_time
 msgid "Part-Time"
-msgstr "وقت غير رسمی"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__user_partner_id
 #: model:ir.model.fields,help:hr.field_hr_employee_public__user_partner_id
 msgid "Partner-related data of the user"
 msgstr "داده مربوط به همکار کاربر"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__parwan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__parwan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__parwan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__parwan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__parwan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__parwan
-msgid "Parwan"
-msgstr "پروان"
 
 #. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
@@ -3382,7 +3023,7 @@ msgstr "پاسپورت"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__passport_id
 #: model:ir.model.fields,field_description:hr.field_res_users__passport_id
 msgid "Passport No"
-msgstr "نمبر پاسپورت"
+msgstr "شماره گذرنامه"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
@@ -3397,7 +3038,7 @@ msgstr "د اجراتو د ارزونی معلومات / معلومات ارزی
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_permanent
 msgid "Permanent"
-msgstr "دائمی"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__relationship_permanent_address
@@ -3417,6 +3058,7 @@ msgid "Permanent District / Village"
 msgstr "قریه"
 
 #. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__permanent_province
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
 msgid "Permanent Province"
 msgstr "ولایت"
@@ -3442,12 +3084,7 @@ msgstr "ضمانت شخص"
 #: code:addons/hr/models/res_users.py:0 code:addons/hr/models/res_users.py:0
 #, python-format
 msgid "Personal information update."
-msgstr "به روز رسانی اطلاعات شخصی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__phd
-msgid "Phd"
-msgstr "دوکتور"
+msgstr ""
 
 #. modules: egp_hr, hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
@@ -3505,16 +3142,6 @@ msgstr "برنامه‌ها"
 msgid "Plans Count"
 msgstr ""
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__pohand
-msgid "Pohand"
-msgstr "پوهاند"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__phanmal
-msgid "Pohanmal"
-msgstr "پوهنمل"
-
 #. module: hr
 #: model:ir.model.fields,help:hr.field_mail_alias__alias_contact
 msgid ""
@@ -3527,11 +3154,6 @@ msgstr ""
 "- همه: همه می توانند پست کنند\n"
 "- شرکا: فقط شرکای تأیید شده\n"
 "- دنبال کنندگان: فقط دنبال کنندگان سند مرتبط یا اعضای کانال های زیر\n"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__post-baccalaureate
-msgid "Post-baccalaureate"
-msgstr "چهارده پاس"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_config_settings_view_form
@@ -3587,11 +3209,6 @@ msgstr "تاریخ صدور"
 msgid "Print Employee Report"
 msgstr "چاپ سوانح کارمند"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__private
-msgid "Private"
-msgstr "شخصی"
-
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
@@ -3618,7 +3235,7 @@ msgstr "تماس شخصی"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__private_country_id
 #: model:ir.model.fields,field_description:hr.field_res_users__private_country_id
 msgid "Private Country"
-msgstr "کشور"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__private_email
@@ -3643,7 +3260,7 @@ msgstr "تلفن شخصی"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__private_state_id
 #: model:ir.model.fields,field_description:hr.field_res_users__private_state_id
 msgid "Private State"
-msgstr "ولایت"
+msgstr ""
 
 #. modules: egp_hr, hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__private_streets
@@ -3656,18 +3273,13 @@ msgstr "کوچه / سرک"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__private_street2
 #: model:ir.model.fields,field_description:hr.field_res_users__private_street2
 msgid "Private Street2"
-msgstr "کوچه / سرک"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__private_zip
 #: model:ir.model.fields,field_description:hr.field_res_users__private_zip
 msgid "Private Zip"
 msgstr ""
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__prof
-msgid "Professor"
-msgstr "پروفیسور"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__employee_properties
@@ -3694,14 +3306,11 @@ msgstr "ضمانت دارایی"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_experience__province
-#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_province
-#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__temporary_province
+#: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_province_id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__temporary_province_id
-#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__province
+#: model:ir.model.fields,field_description:egp_hr.field_employee_property_guarantee__property_province_id
 #: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__permanent_address
 #: model:ir.model.fields,field_description:egp_hr.field_employee_relatives__temporary_address
-#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__permanent_province
-#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__temporary_province
 msgid "Province"
 msgstr "ولایت"
 
@@ -3783,11 +3392,6 @@ msgstr "دلیل صدور حکم"
 msgid "Reason Code"
 msgstr ""
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__recommendation
-msgid "Recommendation"
-msgstr "توسیه"
-
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_config_recruitment
 #: model_terms:ir.ui.view,arch_db:hr.view_hr_job_form
@@ -3825,12 +3429,12 @@ msgstr "ثبت خروج"
 #: code:addons/hr/models/res_users.py:0
 #, python-format
 msgid "Related Employees"
-msgstr "کارمندان مربوطه"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Related User"
-msgstr "یوزر مربوطه"
+msgstr "کاربر مروبطه"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users__employee_ids
@@ -3840,7 +3444,7 @@ msgstr "کارمند‌های مرتبط"
 #. module: hr
 #: model:ir.model.fields,help:hr.field_res_partner__employee_ids
 msgid "Related employees based on their private address"
-msgstr "کارمندان مرتبط به اساس آدرس شخصی شان"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__user_id
@@ -3862,12 +3466,7 @@ msgstr "اقارب"
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__relationship_ids
 msgid "Relatives"
-msgstr "اقارب"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__religious_affairs
-msgid "Religious Affairs"
-msgstr "امور دینی"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_cash_guarantee__cash_remarks
@@ -3889,17 +3488,7 @@ msgstr "ملاحظات"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_config_settings__module_hr_homeworking
 msgid "Remote Work"
-msgstr "وظیفه آنلاین"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__removal_of_current_rank
-msgid "Removal of Current Rank"
-msgstr "حذف رتبه فعلی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__removal_of_duty_job
-msgid "Removal of Duty Job"
-msgstr "منفک"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_health__health_report_date
@@ -4009,31 +3598,6 @@ msgstr "شماره بیمه اجتماعی"
 msgid "SSN No"
 msgstr "شماره تأمین اجتماعی"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__salary_deduction
-msgid "Salary Deduction"
-msgstr "کسر معاش"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__samangan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__samangan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__samangan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__samangan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__samangan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__samangan
-msgid "Samangan"
-msgstr "سمنگان"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__sar-e_pol
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__sar-e_pol
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__sar-e_pol
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__sar-e_pol
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__sar-e_pol
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__sar-e_pol
-msgid "Sar-e Pol"
-msgstr "سرپل"
-
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_users_simple_form
 msgid "Save"
@@ -4044,11 +3608,6 @@ msgstr "ذخیره"
 msgid "Schedule"
 msgstr "زمان‌بندی"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__scholar
-msgid "Scholar"
-msgstr "پوهاند"
-
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__study_school
 #: model:ir.model.fields,field_description:hr.field_res_users__study_school
@@ -4058,7 +3617,7 @@ msgstr "مدرسه"
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_exam__exam_score
 msgid "Score"
-msgstr "نمره معیاری"
+msgstr ""
 
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_seasonal
@@ -4066,24 +3625,9 @@ msgid "Seasonal"
 msgstr ""
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__second_rank
-msgid "Second Rank"
-msgstr "رتبه دوم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__second_step
-msgid "Second Step"
-msgstr "قدم دوم"
-
-#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__second_degree_of_appreciation
 msgid "Second degree of appreciation"
 msgstr "تقدیر نامه درجه دوم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__secondary
-msgid "Secondary"
-msgstr "متوسطه"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__coach_id
@@ -4096,6 +3640,11 @@ msgid ""
 msgstr ""
 "فردی را که مربی این کارمند است انتخاب کنید.\n"
 "مربی به طور پیش‌فرض حقوق یا مسئولیت خاصی ندارد."
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__sending_date
+msgid "Sending Date"
+msgstr "تاریخ ارسال"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_contract_type__sequence
@@ -4115,16 +3664,6 @@ msgstr "تنظیم برنامه شرکت پیش‌فرض برای مدیریت �
 msgid "Settings"
 msgstr "تنظیمات"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__seventh_rank
-msgid "Seventh Rank"
-msgstr "رتبه هفتم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__seventh_step
-msgid "Seventh Step"
-msgstr "قدم هفتم"
-
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__show_hr_icon_display
 #: model:ir.model.fields,field_description:hr.field_hr_employee_base__show_hr_icon_display
@@ -4138,27 +3677,17 @@ msgstr ""
 #: code:addons/hr/static/src/components/department_chart/department_chart.xml:0
 #, python-format
 msgid "Show employees"
-msgstr "کارمند نمایش داده شود."
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__sign
 msgid "Sign"
-msgstr "نشان"
+msgstr "امضا"
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__marital__single
 msgid "Single"
 msgstr "مجرد"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__sixth_rank
-msgid "Sixth Rank"
-msgstr "رتبه ششم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__sixth_step
-msgid "Sixth Step"
-msgstr "قدم ششم"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_config_settings__module_hr_skills
@@ -4179,7 +3708,7 @@ msgstr "شماره ملی"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.print_employee_badge
 msgid "Software Developer"
-msgstr "سافتویر ډیوپلور"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_language__speaking
@@ -4248,9 +3777,14 @@ msgid "Step"
 msgstr "قدم"
 
 #. module: egp_hr
-#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__step
-msgid "Step / Rank"
-msgstr "رتبه / قدم"
+#: model:ir.model.fields,field_description:egp_hr.field_employee_step__name
+msgid "Step Or Rank"
+msgstr "قدم / رتبه"
+
+#. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_employee_experience__step_id
+msgid "Step or Rank"
+msgstr "قدم / رتبه"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
@@ -4284,21 +3818,11 @@ msgid "Subject"
 msgstr "مضمون"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__super_rank
-msgid "Super Rank"
-msgstr "فوق رتبه"
-
-#. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__superior_head_opinion
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__supervisor_opinion
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__superior_head
 msgid "Superior Head"
 msgstr "آمر مستقیم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__superior_rank
-msgid "Superior Rank"
-msgstr "مافوق رتبه"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__head_details__supervisor
@@ -4308,7 +3832,7 @@ msgstr "نظارت کننده"
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__supreme
 msgid "Supreme"
-msgstr "اعلی"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_category__name
@@ -4328,16 +3852,6 @@ msgstr "نام برچسب از قبل وجود دارد!"
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Tags"
 msgstr "برچسب‌ها"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__takhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__takhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__takhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__takhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__takhar
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__takhar
-msgid "Takhar"
-msgstr "تخار"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job__no_of_recruitment
@@ -4362,7 +3876,7 @@ msgstr ""
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_temporary
 msgid "Temporary"
-msgstr "موقت"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_hr_employee__temporary_district
@@ -4376,6 +3890,7 @@ msgid "Temporary District / Village"
 msgstr "قریه"
 
 #. module: egp_hr
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__temporary_province
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
 msgid "Temporary Province"
 msgstr "ولایت"
@@ -4385,16 +3900,6 @@ msgstr "ولایت"
 #: model_terms:ir.ui.view,arch_db:egp_hr.view_employee_form_inherit
 msgid "Temporary Village"
 msgstr "قریه"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__tenth_rank
-msgid "Tenth Rank"
-msgstr "رتبه دهم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__tenth_step
-msgid "Tenth Step"
-msgstr "قدم دهم"
 
 #. module: hr
 #: model:ir.model.constraint,message:hr.constraint_hr_employee_barcode_uniq
@@ -4511,19 +4016,9 @@ msgid "The work permit of %(employee)s expires at %(date)s."
 msgstr ""
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__third_rank
-msgid "Third Rank"
-msgstr "رتبه سوم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__third_step
-msgid "Third Step"
-msgstr "قدم سوم"
-
-#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__third_degree_of_appreciation
 msgid "Third degree of appreciation"
-msgstr "تقدیر نامه درجه سوم"
+msgstr "تقدری نامه درجه سوم"
 
 #. module: hr
 #. odoo-python
@@ -4531,7 +4026,7 @@ msgstr "تقدیر نامه درجه سوم"
 #: code:addons/hr/models/hr_employee.py:0
 #, python-format
 msgid "This employee already has an user."
-msgstr "این کارمند از قبل یک یوزر دارد"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__tz
@@ -4603,11 +4098,6 @@ msgstr "کل کارمندان پیش بینی شده"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_appraisal__total_marks
 msgid "Total Marks"
 msgstr "نمرات مجموعی"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__traffics
-msgid "Traffics"
-msgstr "ترافیکی"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_appraisal__appraisal_type__trail
@@ -4682,11 +4172,6 @@ msgid "Undetermined"
 msgstr "نامعین"
 
 #. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__uniform
-msgid "Uniform"
-msgstr "یونیفورم"
-
-#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__organization_type__united_nations
 msgid "United Nations"
 msgstr "ملل متحد"
@@ -4697,11 +4182,6 @@ msgstr "ملل متحد"
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "University"
 msgstr "پوهنتون"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__unranked
-msgid "Unranked"
-msgstr "خارج رتبه"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_department_filter
@@ -4730,16 +4210,6 @@ msgstr "ارتقا به قدم دوم"
 msgid "Upgrade to the Third step"
 msgstr "ارتقا به قدم سوم"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__urozgan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__urozgan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__urozgan
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__urozgan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__urozgan
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__urozgan
-msgid "Urozgan"
-msgstr "ارزگان"
-
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_categ_form
 msgid "Use tags to categorize your Employees."
@@ -4763,7 +4233,7 @@ msgstr "همکار کاربر"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.hr_job_view_kanban
 msgid "Vacancies:"
-msgstr "تعداد"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_company__hr_presence_control_ip_list
@@ -4785,7 +4255,7 @@ msgstr "متوسط"
 #: code:addons/hr/static/src/components/avatar_card/avatar_card_popover_patch.xml:0
 #, python-format
 msgid "View profile"
-msgstr "دیدن پروفایل"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_village_id
@@ -4804,7 +4274,7 @@ msgstr "توع تخلف"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_expire
 #: model:ir.model.fields,field_description:hr.field_res_users__visa_expire
 msgid "Visa Expiration Date"
-msgstr "تاریخ انقضا "
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_no
@@ -4812,21 +4282,10 @@ msgstr "تاریخ انقضا "
 msgid "Visa No"
 msgstr "شماره ویزا"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__wardak
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__wardak
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__wardak
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__wardak
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__wardak
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__wardak
-msgid "Wardak"
-msgstr "وردک"
-
-#. modules: egp_hr, hr
+#. module: hr
 #. odoo-python
 #: code:addons/hr/models/hr_employee.py:0
 #: code:addons/hr/models/hr_employee.py:0
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__punishment_type__warning
 #, python-format
 msgid "Warning"
 msgstr "هشدار"
@@ -4948,13 +4407,13 @@ msgstr "مجوز کار"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__work_permit_expiration_date
 msgid "Work Permit Expiration Date"
-msgstr "تاریخ انقضا کارت هویت"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__permit_no
 #: model:ir.model.fields,field_description:hr.field_res_users__permit_no
 msgid "Work Permit No"
-msgstr "شماره جواز کارت"
+msgstr "شماره مجوز کار"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__work_permit_scheduled_activity
@@ -4977,7 +4436,7 @@ msgstr "ساعت های کاری"
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_resource_calendar_view
 msgid "Working Schedules"
-msgstr "مهال ویش کاری"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_language__writing
@@ -5046,16 +4505,6 @@ msgstr ""
 msgid "ZIP"
 msgstr "کد پستی"
 
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__zabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__permanent_province__zabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_person_guarantee__temporary_province__zabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_property_guarantee__province__zabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__permanent_province__zabul
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__zabul
-msgid "Zabul"
-msgstr "زابل"
-
 #. module: hr
 #. odoo-python
 #: code:addons/hr/models/mail_alias.py:0 code:addons/hr/models/mail_alias.py:0
@@ -5087,17 +4536,17 @@ msgstr ""
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__elementary
 msgid "elementary"
-msgstr "ابتدایی"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_faculty__name
 msgid "faculty"
-msgstr "پوهنځۍ"
+msgstr "پوهنڅۍ"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_training__training_result__medium
 msgid "medium"
-msgstr "متوسط"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_property__property_type__other
