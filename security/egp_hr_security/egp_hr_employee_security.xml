@@ -1,158 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<!--    Employee Sawaneh security code-->
+    <data>
+        <!--    Employee Sawaneh security code-->
 
-    <record id="group_employee_officers" model="res.groups">
-        <field name="name">EGP-HR Employee officer/ Create all employees details </field>
-        <field name="category_id" ref="base.module_category_human_resources_employees"/>
-        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
-        <field name="comment">The user will be able to approve employee document</field>
-    </record>
-<!--employee expert group -->
-    <record id="group_employee_expert" model="res.groups">
-        <field name="name">EGP-HR Employee Expert / Create all employees detail </field>
-        <field name="category_id" ref="base.module_category_human_resources_employees"/>
-        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
-        <field name="comment">The user will be able to approve document created by employees.</field>
-    </record>
+        <record id="group_employee_officers" model="res.groups">
+            <field name="name">EGP-HR Employee officer/ Create all employees details</field>
+            <field name="category_id" ref="base.module_category_human_resources_employees"/>
+            <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="comment">The user will be able to approve employee document</field>
+        </record>
+        <!--employee expert group -->
+        <record id="group_employee_expert" model="res.groups">
+            <field name="name">EGP-HR Employee Expert / Create all employees detail</field>
+            <field name="category_id" ref="base.module_category_human_resources_employees"/>
+            <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="comment">The user will be able to approve document created by employees.</field>
+        </record>
 
-     <record id="ir_rule_res_partner_bank_employees" model="ir.rule">
-        <field name="name">HR: Allow HR officers from accessing employee bank accounts</field>
-        <field name="model_id" ref="base.model_res_partner_bank"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4, ref('group_employee_officers'))]"/>
-    </record>
+        <record id="ir_rule_res_partner_bank_employees" model="ir.rule">
+            <field name="name">HR: Allow HR officers from accessing employee bank accounts</field>
+            <field name="model_id" ref="base.model_res_partner_bank"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('group_employee_officers'))]"/>
+        </record>
 
-    <record id="hr_skill_rule_hr_user" model="ir.rule">
-        <field name="name">Employee skill: HR user: read all</field>
-        <field name="model_id" ref="model_hr_employee"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4,ref('group_employee_officers'))]"/>
-    </record>
+        <record id="hr_skill_rule_hr_user" model="ir.rule">
+            <field name="name">Employee skill: HR user: read all</field>
+            <field name="model_id" ref="model_hr_employee"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4,ref('group_employee_officers'))]"/>
+        </record>
 
-    <record id="hr_resume_rule_employee_hr_user" model="ir.rule">
-        <field name="name">Resume: HR user: all</field>
-        <field name="model_id" ref="model_hr_employee"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4,ref('group_employee_officers'))]"/>
-    </record>
+        <record id="hr_resume_rule_employee_hr_user" model="ir.rule">
+            <field name="name">Resume: HR user: all</field>
+            <field name="model_id" ref="model_hr_employee"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4,ref('group_employee_officers'))]"/>
+        </record>
 
-<!--  Employee Expert Group menues  -->
-
-
-     <record id="ir_rule_res_partner_bank_employees" model="ir.rule">
-        <field name="name">HR: Allow HR officers from accessing employee bank accounts</field>
-        <field name="model_id" ref="base.model_res_partner_bank"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4, ref('group_employee_expert'))]"/>
-    </record>
-
-    <record id="hr_skill_rule_hr_user" model="ir.rule">
-        <field name="name">Employee skill: HR user: read all</field>
-        <field name="model_id" ref="model_hr_employee"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4,ref('group_employee_expert'))]"/>
-    </record>
-
-    <record id="hr_resume_rule_employee_hr_user" model="ir.rule">
-        <field name="name">Resume: HR user: all</field>
-        <field name="model_id" ref="model_hr_employee"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4,ref('group_employee_expert'))]"/>
-    </record>
+        <!--  Employee Expert Group menues  -->
 
 
-    <record id="hr.menu_hr_employee_user" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <record id="ir_rule_res_partner_bank_employees" model="ir.rule">
+            <field name="name">HR: Allow HR officers from accessing employee bank accounts</field>
+            <field name="model_id" ref="base.model_res_partner_bank"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('group_employee_expert'))]"/>
+        </record>
 
-    <record id="hr.menu_human_resources_configuration" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <record id="hr_skill_rule_hr_user" model="ir.rule">
+            <field name="name">Employee skill: HR user: read all</field>
+            <field name="model_id" ref="model_hr_employee"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4,ref('group_employee_expert'))]"/>
+        </record>
 
-    <record id="hr.menu_hr_department_kanban" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <record id="hr_resume_rule_employee_hr_user" model="ir.rule">
+            <field name="name">Resume: HR user: all</field>
+            <field name="model_id" ref="model_hr_employee"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4,ref('group_employee_expert'))]"/>
+        </record>
 
-    <!--    Employee/Configuration menu visibility for Employee/Officer -->
-    <record id="hr.menu_human_resources_configuration" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <record id="hr.menu_hr_employee_user" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <!--    Employee/Configuration/Employee menu visibility for Employee Officer-->
-    <record id="hr.menu_config_employee" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <record id="hr.menu_human_resources_configuration" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <!--    Employee/Configuration/Recruitment menu visibility for Job Desp. Writer-->
-    <record id="hr.menu_config_recruitment" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
-<!--  Discuss menu visibility only for Administration Access Rights Group  -->
-    <record id="mail.menu_root_discuss" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('base.group_erp_manager'))]"/>
-    </record>
+        <record id="hr.menu_hr_department_kanban" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
+        <!--    Employee/Configuration menu visibility for Employee/Officer -->
+        <record id="hr.menu_human_resources_configuration" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
+        <!--    Employee/Configuration/Employee menu visibility for Employee Officer-->
+        <record id="hr.menu_config_employee" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <!--    Employee/Configuration/Employee/Department menu visibility for Officer/Amir-->
-    <record id="hr.menu_hr_department_tree" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <!--    Employee/Configuration/Recruitment menu visibility for Job Desp. Writer-->
+        <record id="hr.menu_config_recruitment" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <record id="hr.menu_hr_employee_payroll" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_officers'))]"/>
-    </record>
+        <!--    Employee/Configuration/Employee/Department menu visibility for Officer/Amir  -->
+        <record id="hr.menu_hr_department_tree" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-<!--  Employee Expert   -->
+        <record id="hr.menu_hr_employee_payroll" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <record id="hr.menu_hr_employee_user" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
+        <!--    Employee/Configuration/Badges menu invisible for Officer/Amir groups and for Expert/Karshanas group -->
+        <record id="hr_skills.hr_skill_type_menu" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <record id="hr.menu_human_resources_configuration" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
+        <!--    Employee/Configuration/Badges menu assigned for Officer/Amir and Expert/Karshanas group -->
+        <record id="hr_gamification.gamification_badge_menu_hr" model="ir.ui.menu">
+            <field name="groups_id"
+                   eval="[(4, ref('egp_hr.group_employee_expert')),(4, ref('egp_hr.group_employee_officers'))]"/>
+        </record>
 
-    <record id="hr.menu_hr_department_kanban" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
+        <!-- resume line typ menu invisible for  Officer/Amir  and assigned to administrator  -->
+        <record id="hr_skills.hr_resume_line_type_menu" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
+        </record>
 
-    <!--    Employee/Configuration menu visibility for Employee/Officer -->
-    <record id="hr.menu_human_resources_configuration" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
+        <!-- apps menu invisible for  Officer/Amir  and assigned to administrator  -->
+        <record id="base.menu_management" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
+        </record>
 
-    <!--    Employee/Configuration/Employee menu visibility for Employee Officer-->
-    <record id="hr.menu_config_employee" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
-    <!--    Employee HR Root menu visibility for Officer/Amir-->
-    <record id="hr.menu_hr_root" model="ir.ui.menu">
-            <field name="groups_id" eval="[(6, 0, [ref('egp_hr.group_employee_officers')])]"/>
-    </record>
+        <!-- Link Tracker menu invisible for Officer/Amir  and assigned to administrator  -->
+        <record id="utm.menu_link_tracker_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
+        </record>
 
-    <!--    Employee HR Root menu visibility for Expert/ Karshenas    -->
-    <record id="hr.menu_hr_root" model="ir.ui.menu">
-            <field name="groups_id" eval="[(6, 0, [ref('egp_hr.group_employee_expert')])]"/>
-    </record>
-
-    <!--    Employee/Configuration/Recruitment menu visibility for Officer/Amir-->
-    <record id="hr.menu_config_recruitment" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
-
-    <!--    Employee/Configuration/Recruitment menu visibility for Job Desp. Writer-->
-    <record id="hr.menu_config_recruitment" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
-
-    <!--    Employee/Configuration/Employee/Department menu visibility for Officer/Amir-->
-    <record id="hr.menu_hr_department_tree" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
-
-    <record id="hr.menu_hr_employee_payroll" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4, ref('egp_hr.group_employee_expert'))]"/>
-    </record>
+<!--         Website menu invisible for Officer/Amir  and assigned to administrator  -->
+<!--            <record id="website.menu_website_configuration" model="ir.ui.menu">-->
+<!--                <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>-->
+<!--            </record>-->
+    </data>
 </odoo>
