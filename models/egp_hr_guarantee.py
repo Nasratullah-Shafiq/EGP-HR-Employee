@@ -31,14 +31,48 @@ class CashGuarantee(models.Model):
 
         employee_id = fields.Many2one('hr.employee', string='Employee')
 
-        # location = fields.Char(string='Location')
-        property_province_id = fields.Many2one('res.country.state', string="Province", tracking=True,
-                                                ondelete='cascade')
+        province = fields.Selection([
+            ('Badakhshan', 'Badakhshan'),
+            ('Badghis', 'Badghis'),
+            ('Baghlan', 'Baghlan'),
+            ('Balkh', 'Balkh'),
+            ('Bamyan', 'Bamyan'),
+            ('Daykundi', 'Daykundi'),
+            ('Farah', 'Farah'),
+            ('Faryab', 'Faryab'),
+            ('Ghazni', 'Ghazni'),
+            ('Ghor', 'Ghor'),
+            ('Helmand', 'Helmand'),
+            ('Herat', 'Herat'),
+            ('Jowzjan', 'Jowzjan'),
+            ('Kabul', 'Kabul'),
+            ('Kandahar', 'Kandahar'),
+            ('Kapisa', 'Kapisa'),
+            ('Khost', 'Khost'),
+            ('Kunar', 'Kunar'),
+            ('Kunduz', 'Kunduz'),
+            ('Laghman', 'Laghman'),
+            ('Logar', 'Logar'),
+            ('Nangarhar', 'Nangarhar'),
+            ('Nimroz', 'Nimroz'),
+            ('Nuristan', 'Nuristan'),
+            ('Paktia', 'Paktia'),
+            ('Paktika', 'Paktika'),
+            ('Panjshir', 'Panjshir'),
+            ('Parwan', 'Parwan'),
+            ('Samangan', 'Samangan'),
+            ('Sar-e Pol', 'Sar-e Pol'),
+            ('Takhar', 'Takhar'),
+            ('Urozgan', 'Urozgan'),
+            ('Wardak', 'Wardak'),
+            ('Zabul', 'Zabul')
+        ], string="Province")
         property_district_id = fields.Many2one('employee.district', string="District")
         property_village_id = fields.Many2one('employee.village', string="Village")
         deed_no = fields.Integer(string='Deed No')
         deed_date = fields.Date(string='Deed Date')
         property_remarks = fields.Char(string='Remarks')
+
 
 
 class PersonGuarantee(models.Model):
@@ -53,7 +87,7 @@ class PersonGuarantee(models.Model):
     grand_father_name = fields.Char(string='Grand Father Name')
     job_position = fields.Char(string='Job Position')
     organization = fields.Char(string='Organization')
-    permanent_province_id = fields.Many2one('res.country.state', string="Province", tracking=True, ondelete='cascade')
+    # permanent_province_id = fields.Many2one('res.country.state', string="Province", tracking=True, ondelete='cascade')
     permanent_district_id = fields.Many2one('employee.district', string="District")
     permanent_village_id = fields.Many2one('employee.village', string="Village")
 
@@ -62,3 +96,41 @@ class PersonGuarantee(models.Model):
     temporary_village_id = fields.Many2one('employee.village', string="Village")
     phone_no = fields.Char(string='Phone No')
     email = fields.Char(string='Email')
+    PROVINCES = [
+        ('Badakhshan', 'Badakhshan'),
+        ('Badghis', 'Badghis'),
+        ('Baghlan', 'Baghlan'),
+        ('Balkh', 'Balkh'),
+        ('Bamyan', 'Bamyan'),
+        ('Daykundi', 'Daykundi'),
+        ('Farah', 'Farah'),
+        ('Faryab', 'Faryab'),
+        ('Ghazni', 'Ghazni'),
+        ('Ghor', 'Ghor'),
+        ('Helmand', 'Helmand'),
+        ('Herat', 'Herat'),
+        ('Jowzjan', 'Jowzjan'),
+        ('Kabul', 'Kabul'),
+        ('Kandahar', 'Kandahar'),
+        ('Kapisa', 'Kapisa'),
+        ('Khost', 'Khost'),
+        ('Kunar', 'Kunar'),
+        ('Kunduz', 'Kunduz'),
+        ('Laghman', 'Laghman'),
+        ('Logar', 'Logar'),
+        ('Nangarhar', 'Nangarhar'),
+        ('Nimroz', 'Nimroz'),
+        ('Nuristan', 'Nuristan'),
+        ('Paktia', 'Paktia'),
+        ('Paktika', 'Paktika'),
+        ('Panjshir', 'Panjshir'),
+        ('Parwan', 'Parwan'),
+        ('Samangan', 'Samangan'),
+        ('Sar-e Pol', 'Sar-e Pol'),
+        ('Takhar', 'Takhar'),
+        ('Urozgan', 'Urozgan'),
+        ('Wardak', 'Wardak'),
+        ('Zabul', 'Zabul')
+    ]
+    permanent_province = fields.Selection(PROVINCES, string="Province")
+    temporary_province = fields.Selection(PROVINCES, string="Province")

@@ -17,13 +17,78 @@ class EmployeeExperience(models.Model):
 
     employee_id = fields.Many2one('hr.employee', string='Employee')
 
-    country = fields.Many2one('res.country', string="Country", tracking=True, ondelete='cascade')
-    province = fields.Many2one('res.country.state', string="Province", tracking=True, ondelete='cascade')
+    province = fields.Selection([
+        ('Badakhshan', 'Badakhshan'),
+        ('Badghis', 'Badghis'),
+        ('Baghlan', 'Baghlan'),
+        ('Balkh', 'Balkh'),
+        ('Bamyan', 'Bamyan'),
+        ('Daykundi', 'Daykundi'),
+        ('Farah', 'Farah'),
+        ('Faryab', 'Faryab'),
+        ('Ghazni', 'Ghazni'),
+        ('Ghor', 'Ghor'),
+        ('Helmand', 'Helmand'),
+        ('Herat', 'Herat'),
+        ('Jowzjan', 'Jowzjan'),
+        ('Kabul', 'Kabul'),
+        ('Kandahar', 'Kandahar'),
+        ('Kapisa', 'Kapisa'),
+        ('Khost', 'Khost'),
+        ('Kunar', 'Kunar'),
+        ('Kunduz', 'Kunduz'),
+        ('Laghman', 'Laghman'),
+        ('Logar', 'Logar'),
+        ('Nangarhar', 'Nangarhar'),
+        ('Nimroz', 'Nimroz'),
+        ('Nuristan', 'Nuristan'),
+        ('Paktia', 'Paktia'),
+        ('Paktika', 'Paktika'),
+        ('Panjshir', 'Panjshir'),
+        ('Parwan', 'Parwan'),
+        ('Samangan', 'Samangan'),
+        ('Sar-e Pol', 'Sar-e Pol'),
+        ('Takhar', 'Takhar'),
+        ('Urozgan', 'Urozgan'),
+        ('Wardak', 'Wardak'),
+        ('Zabul', 'Zabul')
+    ], string="Province")
+
     organization_id = fields.Many2one('employee.organization', string="Organization")
     job_position = fields.Char(string='Job Position')
     grade = fields.Selection([('1st', '1st'), ('2nd', '2nd'), ('3rd', '3rd'), ('4th', '4th'), ('5th', '5th'),
                               ('6th', '6th'), ('7th', '7th'), ('8th', '8th')], string="Grade")
-    step_id = fields.Many2one('employee.step', string="Step or Rank")
+    step = fields.Selection([
+        ('first_step', 'First Step'),
+        ('second_step', 'Second Step'),
+        ('third_step', 'Third Step'),
+        ('fourth_step', 'Fourth Step'),
+        ('fourth_step', 'Fourth Step'),
+        ('fifth_step', 'Fifth Step'),
+        ('sixth_step', 'Sixth Step'),
+        ('seventh_step', 'Seventh Step'),
+        ('eight_step', 'Eight Step'),
+        ('ninth_step', 'Ninth Step'),
+        ('tenth_step', 'Tenth Step'),
+        ('first_rank', 'First Rank'),
+        ('second_rank', 'Second Rank'),
+        ('third_rank', 'Third Rank'),
+        ('fourth_rank', 'Fourth Rank'),
+        ('fourth_rank', 'Fourth Rank'),
+        ('fifth_rank', 'Fifth Rank'),
+        ('sixth_rank', 'Sixth Rank'),
+        ('seventh_rank', 'Seventh Rank'),
+        ('eight_rank', 'Eight Rank'),
+        ('ninth_rank', 'Ninth Rank'),
+        ('tenth_rank', 'Tenth Rank'),
+        ('super_rank', 'Super Rank'),
+        ('superior_rank', 'Superior Rank'),
+        ('unranked', 'Unranked'),
+        ('prof', 'Professor'),
+        ('scholar', 'Scholar'),
+        ('phanmal', 'Pohanmal'),
+        ('pohand', 'Pohand')
+    ], string="Step / Rank")
     department = fields.Char(string='Department')
     status_id = fields.Many2one('employee.status', string="Status")
     job_start_date = fields.Date(string='Start Date')
@@ -52,12 +117,6 @@ class EmployeeOrganization(models.Model):
 
     name = fields.Char(string='Organization')
 
-
-class EmployeeStep(models.Model):
-    _name = 'employee.step'
-    _description = 'Employee Step'
-
-    name = fields.Char(string='Step Or Rank')
 
 class EmployeeStatus(models.Model):
     _name = 'employee.status'
