@@ -4,6 +4,7 @@ access_hr_experience,employee.experience,model_employee_experience,egp_hr.group_
 access_hr_publication,employee.publication,model_employee_publication,egp_hr.group_employee_officers,1,1,1,1
 access_hr_reward,employee.reward,model_employee_reward,egp_hr.group_employee_officers,1,1,1,1
 access_hr_retirement,employee.retirement,model_employee_retirement,egp_hr.group_employee_officers,1,1,1,1
+access_hr_retirement_reason,employee.retirement.reason,model_employee_retirement_reason,egp_hr.group_employee_officers,1,1,1,1
 access_hr_retirement_type,employee.retirement.type,model_employee_retirement_type,egp_hr.group_employee_officers,1,1,1,1
 access_hr_village,employee.village,model_employee_village,egp_hr.group_employee_officers,1,1,1,1
 access_hr_relationship,employee.relationship,model_employee_relationship,egp_hr.group_employee_officers,1,1,1,1
@@ -36,11 +37,10 @@ access_hr_punishment,employee.punishment,model_employee_punishment,egp_hr.group_
 access_hr_reward,employee.reward,model_employee_reward,egp_hr.group_employee_officers,1,1,1,1
 access_hr_organization,employee.organization,model_employee_organization,egp_hr.group_employee_officers,1,1,1,1
 access_hr_appraisal,employee.appraisal,model_employee_appraisal,egp_hr.group_employee_officers,1,1,1,1
-access_hr_degree,employee.degree,model_employee_degree,egp_hr.group_employee_officers,1,1,1,1
-access_hr_step,employee.step,model_employee_step,egp_hr.group_employee_officers,1,1,1,1
+
 access_hr_employee_category_user_s,hr.employee.category.user.s,hr.model_hr_employee_category,egp_hr.group_employee_officers,1,1,1,1
 access_hr_employee_resource_user_s,resource.resource.user.s,resource.model_resource_resource,egp_hr.group_employee_officers,1,1,1,1
-access_hr_department_user_s,hr.department.user.s,hr.model_hr_department,egp_hr.group_employee_officers,1,1,0,1
+access_hr_department_user_s,hr.department.user.s,hr.model_hr_department,egp_hr.group_employee_officers,1,0,0,0
 access_hr_job_user_s,hr.job user.s,hr.model_hr_job,egp_hr.group_employee_officers,1,1,0,1
 
 access_hr_departure_reason_s,access_hr_departure_reason_user.s,hr.model_hr_departure_reason,egp_hr.group_employee_officers,1,1,1,1
@@ -59,6 +59,7 @@ access_hr_publication_expert,employee.publication,model_employee_publication,egp
 access_hr_reward_expert,employee.reward,model_employee_reward,egp_hr.group_employee_expert,1,1,1,1
 access_hr_retirement_expert,employee.retirement,model_employee_retirement,egp_hr.group_employee_expert,1,1,1,1
 access_hr_retirement_type_expert,employee.retirement.type,model_employee_retirement_type,egp_hr.group_employee_expert,1,1,1,1
+access_hr_retirement_reason_expert,employee.retirement.reason,model_employee_retirement_reason,egp_hr.group_employee_expert,1,1,1,1
 access_hr_village_expert,employee.village,model_employee_village,egp_hr.group_employee_expert,1,1,1,1
 access_hr_relationship_expert,employee.relationship,model_employee_relationship,egp_hr.group_employee_expert,1,1,1,1
 access_hr_document_type_expert,employee.document.type,model_employee_document_type,egp_hr.group_employee_expert,1,1,1,1
@@ -91,11 +92,10 @@ access_hr_punishment_expert,employee.punishment,model_employee_punishment,egp_hr
 access_hr_reward_expert,employee.reward,model_employee_reward,egp_hr.group_employee_expert,1,1,1,1
 access_hr_organization_expert,employee.organization,model_employee_organization,egp_hr.group_employee_expert,1,1,1,1
 access_hr_appraisal_expert,employee.appraisal,model_employee_appraisal,egp_hr.group_employee_expert,1,1,1,1
-access_hr_degree_expert,employee.degree,model_employee_degree,egp_hr.group_employee_expert,1,1,1,1
-access_hr_step_expert,employee.step,model_employee_step,egp_hr.group_employee_expert,1,1,1,1
+
 access_hr_employee_category_user_expert,hr.employee.category.user.s,hr.model_hr_employee_category,egp_hr.group_employee_expert,1,1,1,1
 access_hr_employee_resource_user_expert,resource.resource.user.s,resource.model_resource_resource,egp_hr.group_employee_expert,1,1,1,1
-access_hr_department_user_expert,hr.department.user.s,hr.model_hr_department,egp_hr.group_employee_expert,1,1,0,1
+access_hr_department_user_expert,hr.department.user.s,hr.model_hr_department,egp_hr.group_employee_expert,1,0,0,0
 access_hr_job_user_expert,hr.job user.s,hr.model_hr_job,egp_hr.group_employee_expert,1,1,0,1
 access_hr_departure_reason_expert,access_hr_departure_reason_user.s,hr.model_hr_departure_reason,egp_hr.group_employee_expert,1,1,1,1
 access_hr_contract_type_manager_expert,hr.contract.type.manager.s,hr.model_hr_contract_type,egp_hr.group_employee_expert,1,1,1,1
@@ -107,3 +107,14 @@ access_hr_skill_expert,hr_skills.hr.skill,hr_skills.model_hr_skill,egp_hr.group_
 access_hr_employee_skill_expert,hr_skills.hr.employee.skill,hr_skills.model_hr_employee_skill,egp_hr.group_employee_expert,1,1,1,1
 access_hr_employee_skill_report_expert,hr_skills.hr.employee.skill.report,hr_skills.model_hr_employee_skill_report,egp_hr.group_employee_expert,1,0,0,0
 access_hr_employee_skill_log_expert,hr_skills.hr.employee.skill.log,hr_skills.model_hr_employee_skill_log,egp_hr.group_employee_expert,1,1,1,0
+
+challenge_officer,"Challenge Officer",gamification.model_gamification_challenge,egp_hr.group_employee_officers,1,1,1,1
+challenge_line_officer,"Challenge Line Officer",gamification.model_gamification_challenge_line,egp_hr.group_employee_officers,1,1,1,1
+badge_officers,"Badge Officers",hr_gamification.model_gamification_badge,egp_hr.group_employee_officers,1,1,1,1
+badge_user_officer,"Badge-user Officer",hr_gamification.model_gamification_badge_user,egp_hr.group_employee_officers,1,1,1,1
+access_hr_department_user_ss,hr.department.user.ss,hr.model_hr_department,egp_hr.group_employee_officers,1,0,0,0
+
+challenge_officer,"Challenge Officer",gamification.model_gamification_challenge,egp_hr.group_employee_expert,1,1,1,1
+challenge_line_officer,"Challenge Line Officer",gamification.model_gamification_challenge_line,egp_hr.group_employee_expert,1,1,1,1
+badge_officer,"Badge Officer",hr_gamification.model_gamification_badge,egp_hr.group_employee_expert,1,1,1,1
+badge_user_officer,"Badge-user Officer",hr_gamification.model_gamification_badge_user,egp_hr.group_employee_expert,1,1,1,1
