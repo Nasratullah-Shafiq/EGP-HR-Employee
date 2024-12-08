@@ -11,9 +11,8 @@ class HrEmployeeInherit(models.Model):
 
     job_step = fields.Selection([('1st', '1st'), ('2nd', '2nd'), ('3rd', '3rd'), ('4th', '4th'), ('5th', '5th')],
                                 string='Step')
-    message_main_attachment_id = fields.Many2one(groups="base.group_erp_manager,egp_hr.group_employee_officers,egp_hr.group_employee_expert, egp_hr_recruitment.group_recruitment_id_card_manager")
-    # message_main_attachment_id = fields.Many2one(
-        # groups="base.group_erp_manager,egp_hr.group_employee_officers,egp_hr_recruitment.group_recruitment_amir,egp_hr_recruitment.group_recruitment_Karshanas")
+    message_main_attachment_id = fields.Many2one(groups="base.group_erp_manager,egp_hr.group_employee_officers,egp_hr.group_employee_expert")
+
     recruitment_date = fields.Date(string='Recruitment Date')
 
     start_date = fields.Date(string='Start Date')
@@ -27,9 +26,10 @@ class HrEmployeeInherit(models.Model):
     identification_expiry_date = fields.Date(string='Expire Date')
     identification_chapter = fields.Integer(string='Chapter')
     identification_page_no = fields.Integer(string='Page No')
+    # permanent_province = fields.Many2one('res.country.state', string="Permanent Province", tracking=True, ondelete='cascade')
+    # temporary_province = fields.Many2one('res.country.state', string="Temporary Province", tracking=True, ondelete='cascade')
+    # Use the same variable for both fields
 
-    permanent_province = fields.Many2one('res.country.state', string="Permanent Province", tracking=True, ondelete='cascade')
-    temporary_province = fields.Many2one('res.country.state', string="Temporary Province", tracking=True, ondelete='cascade')
     permanent_district = fields.Many2one('employee.district', string="Permanent District", tracking=True,
                                          ondelete='cascade')
     temporary_district = fields.Many2one('employee.district', string="Temporary District", tracking=True,
@@ -48,4 +48,44 @@ class HrEmployeeInherit(models.Model):
                                          ondelete='cascade')
     emp_country_of_birth = fields.Many2one('res.country', string="Country of Birth", tracking=True,ondelete='cascade')
     emp_nationality = fields.Many2one('res.country', string="Nationality", tracking=True,ondelete='cascade')
+    # Define the list of provinces once
+    PROVINCES = [
+        ('Badakhshan', 'Badakhshan'),
+        ('Badghis', 'Badghis'),
+        ('Baghlan', 'Baghlan'),
+        ('Balkh', 'Balkh'),
+        ('Bamyan', 'Bamyan'),
+        ('Daykundi', 'Daykundi'),
+        ('Farah', 'Farah'),
+        ('Faryab', 'Faryab'),
+        ('Ghazni', 'Ghazni'),
+        ('Ghor', 'Ghor'),
+        ('Helmand', 'Helmand'),
+        ('Herat', 'Herat'),
+        ('Jowzjan', 'Jowzjan'),
+        ('Kabul', 'Kabul'),
+        ('Kandahar', 'Kandahar'),
+        ('Kapisa', 'Kapisa'),
+        ('Khost', 'Khost'),
+        ('Kunar', 'Kunar'),
+        ('Kunduz', 'Kunduz'),
+        ('Laghman', 'Laghman'),
+        ('Logar', 'Logar'),
+        ('Nangarhar', 'Nangarhar'),
+        ('Nimroz', 'Nimroz'),
+        ('Nuristan', 'Nuristan'),
+        ('Paktia', 'Paktia'),
+        ('Paktika', 'Paktika'),
+        ('Panjshir', 'Panjshir'),
+        ('Parwan', 'Parwan'),
+        ('Samangan', 'Samangan'),
+        ('Sar-e Pol', 'Sar-e Pol'),
+        ('Takhar', 'Takhar'),
+        ('Urozgan', 'Urozgan'),
+        ('Wardak', 'Wardak'),
+        ('Zabul', 'Zabul')
+    ]
+    permanent_province = fields.Selection(PROVINCES, string="Province")
+    temporary_province = fields.Selection(PROVINCES, string="Province")
+
 
