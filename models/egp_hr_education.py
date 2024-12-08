@@ -18,7 +18,17 @@ class EmployeeEducation(models.Model):
     employee_id = fields.Many2one('hr.employee', string='Employee')
 
     country = fields.Many2one('res.country', string="Country", tracking=True)
-    degree_id = fields.Many2one('employee.degree', string="Degree")
+    # degree_id = fields.Many2one('employee.degree', string="Degree")
+    degree = fields.Selection([
+        ('phd', 'Phd'),
+        ('master', 'Master'),
+        ('bachelor', 'Bachelor'),
+        ('post-baccalaureate', 'Post-baccalaureate'),
+        ('private', 'Private'),
+        ('secondary', 'Secondary'),
+        ('darul_uloom', 'Darul Uloom')
+    ], string="Degree")
+
     university_id = fields.Many2one('employee.university', string="University")
     faculty_id = fields.Many2one('employee.faculty', string="Faculty")
     major = fields.Char(string='Major')
@@ -34,13 +44,6 @@ class EmployeeUniversity(models.Model):
     _description = 'Employee University'
 
     name = fields.Char(string='University')
-
-class EmployeeDegree(models.Model):
-    _name = 'employee.degree'
-    _description = 'Employee Degree'
-
-    name = fields.Char(string='Degree')
-
 
 class EmployeeFaculty(models.Model):
     _name = 'employee.faculty'

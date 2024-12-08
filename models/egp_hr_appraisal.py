@@ -24,7 +24,7 @@ class EmployeeAppraisal(models.Model):
     head_details = fields.Selection([('head', 'Head'), ('external_head', 'External Head'), ('superior_head', 'Superior Head'),
                                        ('supervisor', 'Supervisor'),
                                        ('quarterly', 'Quarterly')], string="Head Details", default='superior_head')
-    sending_date = fields.Date(string='Sending Date')
+    # sending_date = fields.Date(string='Sending Date')
     basic_objective_of_work_plan = fields.Selection([('yes', 'Yes'), ('no', 'No')],
                                                     string="Basic objective of work plan", default='yes')
     head_opinion = fields.Char(string='Head Opinion')
@@ -44,7 +44,7 @@ class EmployeeAppraisal(models.Model):
     employee_opinion = fields.Char(string='Employee Opinion')
     is_agree_with_the_result = fields.Selection([('yes', 'Yes'), ('no', 'No')], string="Agree with the result",
                                                    default='yes')
-    admin_opinion = fields.Char(string='Admin Opinion')
+    # admin_opinion = fields.Char(string='Admin Opinion')
     employee_opinion_again = fields.Char(string='Employee Opinion')
     supervisor_opinion = fields.Char(string='Superior Head')
 
