@@ -35,7 +35,7 @@
                                 <field name="education_ids">
                                     <tree>
                                         <field name="country"/>
-                                        <field name="degree_id"/>
+                                        <field name="degree"/>
                                         <field name="university_id"/>
                                         <field name="faculty_id"/>
                                         <field name="major"/>
@@ -49,7 +49,7 @@
                                             <group>
                                                 <field name="country"/>
                                                 <field name="university_id"/>
-                                                <field name="degree_id"/>
+                                                <field name="degree"/>
                                                 <field name="faculty_id"/>
                                                 <field name="major"/>
                                             </group>
@@ -67,29 +67,31 @@
                                   groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
                                 <field name="experience_ids">
                                     <tree>
-                                        <field name="country"/>
+
                                         <field name="province"/>
                                         <field name="organization_id"/>
                                         <field name="job_position"/>
                                         <field name="grade"/>
-                                        <field name="step_id"/>
+                                        <field name="step"/>
                                         <field name="department"/>
                                         <field name="status_id"/>
                                         <field name="job_start_date"/>
                                         <field name="job_end_date"/>
                                         <field name="organization_type"/>
                                         <field name="duration_days"/>
+<!--                                        <field name="duration_years"/>-->
+
                                         <field name="job_remarks"/>
                                     </tree>
                                     <form>
                                         <group>
                                             <group>
-                                                <field name="country"/>
+
                                                 <field name="province"/>
                                                 <field name="organization_id"/>
                                                 <field name="job_position"/>
                                                 <field name="grade"/>
-                                                <field name="step_id"/>
+                                                <field name="step"/>
                                                 <field name="department"/>
                                             </group>
                                             <group>
@@ -98,6 +100,7 @@
                                                 <field name="job_end_date"/>
                                                 <field name="organization_type"/>
                                                 <field name="duration_days"/>
+<!--                                                <field name="duration_months"/>-->
                                                 <field name="job_remarks"/>
                                             </group>
                                         </group>
@@ -201,7 +204,7 @@
                                         <field name="appraisal_type"/>
                                         <field name="total_marks"/>
                                         <field name="head_details"/>
-                                        <field name="sending_date"/>
+<!--                                        <field name="sending_date"/>-->
                                         <field name="basic_objective_of_work_plan"/>
                                         <field name="head_opinion"/>
                                         <field name="superior_head_opinion"/>
@@ -210,7 +213,7 @@
                                         <field name="final_result"/>
                                         <field name="employee_opinion"/>
                                         <field name="is_agree_with_the_result"/>
-                                        <field name="admin_opinion"/>
+<!--                                        <field name="admin_opinion"/>-->
                                         <field name="employee_opinion_again"/>
                                         <field name="supervisor_opinion"/>
                                     </tree>
@@ -220,7 +223,7 @@
                                                 <field name="appraisal_type"/>
                                                 <field name="total_marks"/>
                                                 <field name="head_details"/>
-                                                <field name="sending_date"/>
+<!--                                                <field name="sending_date"/>-->
                                                 <field name="basic_objective_of_work_plan"/>
                                                 <field name="head_opinion"/>
                                                 <field name="superior_head_opinion"/>
@@ -231,8 +234,11 @@
                                                 <field name="final_result"/>
                                                 <field name="employee_opinion"/>
                                                 <field name="is_agree_with_the_result"/>
-                                                <field name="admin_opinion"/>
-                                                <field name="employee_opinion_again"/>
+<!--                                                <field name="admin_opinion"/>-->
+<!--                                                <field name="employee_opinion_again"/>-->
+                                                <field name="employee_opinion_again"
+                                       invisible="is_agree_with_the_result != 'no'"/>
+
                                                 <field name="supervisor_opinion"/>
                                             </group>
                                         </group>
@@ -281,7 +287,7 @@
                                           groups="egp_hr.group_employee_officers, egp_hr.group_employee_expert">
                                         <field name="property_guarantee_ids">
                                             <tree>
-                                                <field name="property_province_id"/>
+                                                <field name="province"/>
                                                 <field name="property_district_id"/>
                                                 <field name="property_village_id"/>
                                                 <field name="deed_no"/>
@@ -290,7 +296,7 @@
                                             </tree>
                                             <form>
                                                 <group>
-                                                    <field name="property_province_id"/>
+                                                    <field name="province"/>
                                                     <field name="property_district_id"/>
                                                     <field name="property_village_id"/>
                                                     <field name="deed_no"/>
@@ -331,7 +337,7 @@
                                                 <field name="organization"/>
                                                 <field name="phone_no"/>
                                                 <field name="email"/>
-                                                <field name="permanent_province_id"/>
+                                                <field name="permanent_province"/>
                                                 <field name="permanent_district_id"/>
                                                 <field name="permanent_village_id"/>
                                             </tree>
@@ -349,11 +355,11 @@
                                                     </group>
                                                     <group>
                                                         <separator name="has_address" string="Permanent Address"/>
-                                                        <field name="permanent_province_id"/>
+                                                        <field name="permanent_province"/>
                                                         <field name="permanent_district_id"/>
                                                         <field name="permanent_village_id"/>
                                                         <separator name="has_address" string="Contemporary Address"/>
-                                                        <field name="temporary_province_id"/>
+                                                        <field name="temporary_province"/>
                                                         <field name="temporary_district_id"/>
                                                         <field name="temporary_village_id"/>
                                                     </group>
