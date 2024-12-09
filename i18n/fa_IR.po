@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 13:21+0000\n"
-"PO-Revision-Date: 2024-11-04 13:21+0000\n"
+"POT-Creation-Date: 2024-12-09 06:49+0000\n"
+"PO-Revision-Date: 2024-12-09 06:49+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -44,51 +44,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr.print_employee_badge
 msgid "12345678901"
 msgstr "۱۲۳۴۵۶۷۸۹۰۱"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__1st
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__1st
-msgid "1st"
-msgstr "اول"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__2nd
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__2nd
-msgid "2nd"
-msgstr "دوم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__3rd
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__3rd
-msgid "3rd"
-msgstr "سوم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__4th
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__4th
-msgid "4th"
-msgstr "چهارم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__5th
-#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__5th
-msgid "5th"
-msgstr "پنجم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__6th
-msgid "6th"
-msgstr "ششم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__7th
-msgid "7th"
-msgstr "هفتم"
-
-#. module: egp_hr
-#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__8th
-msgid "8th"
-msgstr "هشتم"
 
 #. module: hr
 #. odoo-python
@@ -193,6 +148,16 @@ msgstr "کارمند جدید"
 msgid "A user cannot be linked to multiple employees in the same company."
 msgstr "یک کاربر نمی‌تواند به کارکنان متعدد در همان شرکت مرتبط باشد."
 
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__above_degree
+msgid "Above Degree"
+msgstr "مافوق درجه"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__above_rank
+msgid "Above Rank"
+msgstr "فوق رتبه"
+
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__hr_icon_display__presence_absent
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__hr_presence_state__absent
@@ -202,6 +167,21 @@ msgstr "یک کاربر نمی‌تواند به کارکنان متعدد در 
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee_public__hr_presence_state__absent
 msgid "Absent"
 msgstr "غایب"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__accused
+msgid "Accused"
+msgstr "تورن"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__accused_general
+msgid "Accused General"
+msgstr "تورن جنرال"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__acting_sergeant
+msgid "Acting Sergeant"
+msgstr "سرپر کمشر قدمدار"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__message_needaction
@@ -312,8 +292,10 @@ msgstr "آدرس"
 
 #. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
-msgid "Address and Contacts"
-msgstr "آدرس ها و تماس ها"
+msgid ""
+"Address and\n"
+"                                Contacts"
+msgstr ""
 
 #. module: hr
 #: model:hr.department,name:hr.dep_administration
@@ -445,6 +427,16 @@ msgstr "مقاله"
 #: model:ir.model.fields,field_description:hr.field_mail_activity_plan_template__responsible_type
 msgid "Assignment"
 msgstr ""
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__assistant_acting_sergeant
+msgid "Assistant Acting Sergeant"
+msgstr "معاون سرپرکمشر قدم دار"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__assistant_chief
+msgid "Assistant Chief"
+msgstr "معاون سرپرکمشر"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__message_attachment_count
@@ -636,6 +628,11 @@ msgid "Batch No"
 msgstr "نمبر مکتوب"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__battler
+msgid "Battler"
+msgstr "جگرن"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__behavioral
 msgid "Behavioral"
 msgstr "سلوکی"
@@ -652,6 +649,11 @@ msgstr "فایل باینری"
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_publication__publication_type__book
 msgid "Book"
 msgstr "کتاب"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__brigadier_general
+msgid "Brigadier General"
+msgstr "برید جنرال"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users__can_edit
@@ -713,6 +715,21 @@ msgstr "جلد"
 msgid "Chat"
 msgstr "گفتگو"
 
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__chief
+msgid "Chief"
+msgstr "پرکمشر"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__chief_sergeant
+msgid "Chief Sergeant"
+msgstr "سرپرکمشر"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__chief_of_regiment
+msgid "Chief of Regiment"
+msgstr "دریم بریدمن"
+
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__child_ids
 msgid "Child Departments"
@@ -740,10 +757,8 @@ msgstr "ملکی"
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid ""
 "Civil service employee report form to complete the records for the purpose of\n"
-"                            appointment in new duties, conversion, dismissal and re-appointment"
+"                                appointment in new duties, conversion, dismissal and re-appointment"
 msgstr ""
-"فورم خلص سوانح کارکن خدمات ملکی جهت تکمیل سوابق غرض تقرر در وظایف جدید، "
-"تبدیلی، انتصاف و تقرر مجدد"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__coach_id
@@ -766,6 +781,11 @@ msgstr "مربی کارمند %s تعیین نشده است."
 #: model:ir.model.fields,field_description:hr.field_hr_contract_type__code
 msgid "Code"
 msgstr "کد"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__colonel
+msgid "Colonel"
+msgstr "دگروال"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_department_form
@@ -1409,12 +1429,19 @@ msgid "Educational"
 msgstr "تعلیمی"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__eight_position
+msgid "Eight Position"
+msgstr "بست هشتم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__eight_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__eight_rank
 msgid "Eight Rank"
 msgstr "رتبه هشتم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__eight_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__eight_step
 msgid "Eight Step"
 msgstr "قدم هشتم"
 
@@ -1661,7 +1688,7 @@ msgstr "برچسب‌های کارمند"
 #: code:addons/hr/static/src/views/archive_employee_hook.js:0
 #, python-format
 msgid "Employee Termination"
-msgstr "حذف بست فعلی"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model,name:egp_hr.model_employee_training
@@ -1930,12 +1957,19 @@ msgid "Field of Study"
 msgstr "رشته تحصیلی"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__fifth_position
+msgid "Fifth Position"
+msgstr "بست پنجم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fifth_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__fifth_rank
 msgid "Fifth Rank"
 msgstr "رتبه پنجم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fifth_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__fifth_step
 msgid "Fifth Step"
 msgstr "قدم پنچم"
 
@@ -1966,12 +2000,24 @@ msgid "Fired"
 msgstr "اخراج شده"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__first_lieutenant
+msgid "First Lieutenant"
+msgstr "لمری بردمن"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__first_position
+msgid "First Position"
+msgstr "بست اول"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__first_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__first_rank
 msgid "First Rank"
 msgstr "رتبه اول"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__first_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__first_step
 msgid "First Step"
 msgstr "قدم اول"
 
@@ -2010,12 +2056,19 @@ msgid ""
 msgstr ""
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__fourth_position
+msgid "Fourth Position"
+msgstr "بست چهارم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fourth_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__fourth_rank
 msgid "Fourth Rank"
 msgstr "رتبه چهارم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__fourth_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__fourth_step
 msgid "Fourth Step"
 msgstr "قدم چهارم"
 
@@ -2091,6 +2144,56 @@ msgstr "خوب"
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "Grade"
 msgstr "بست"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_one
+msgid "Grade 1"
+msgstr "درجه 1"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_ten
+msgid "Grade 10"
+msgstr " درجه 10"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_two
+msgid "Grade 2"
+msgstr "درجه 2"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_three
+msgid "Grade 3"
+msgstr "درجه 3"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_four
+msgid "Grade 4"
+msgstr "درجه 4"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_five
+msgid "Grade 5"
+msgstr "درجه 5"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_six
+msgid "Grade 6"
+msgstr "درجه 6"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_seven
+msgid "Grade 7"
+msgstr "درجه 7"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_eight
+msgid "Grade 8"
+msgstr "درجه 8"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__grade_nine
+msgid "Grade 9"
+msgstr "درجه 9"
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__certificate__graduate
@@ -2491,11 +2594,6 @@ msgstr "وظیفه"
 msgid "Job Announcement"
 msgstr "اعلان وظیفه"
 
-#. module: hr
-#: model:ir.model.fields,field_description:hr.field_hr_job__description
-msgid "Job Description"
-msgstr "شرح شغل"
-
 #. module: egp_hr
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "Job Location"
@@ -2524,9 +2622,10 @@ msgid "Job Positions"
 msgstr "موقعیت های شغلی"
 
 #. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_job__description
 #: model_terms:ir.ui.view,arch_db:hr.view_hr_job_form
 msgid "Job Summary"
-msgstr "لایحه وظایف"
+msgstr "شرح شغل"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__job_title
@@ -2557,6 +2656,41 @@ msgstr ""
 #: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__temporary_province__jowzjan
 msgid "Jowzjan"
 msgstr "جوزجان"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__judicial_branch_one
+msgid "Judicial Branch 1"
+msgstr "قضاوت پوه"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__judicial_branch_two
+msgid "Judicial Branch 2"
+msgstr "قضاوت پال"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__judicial_branch_three
+msgid "Judicial Branch 3"
+msgstr "قضاوت وال"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__judicial_branch_four
+msgid "Judicial Branch 4"
+msgstr "قضاوت مل"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__judicial_level
+msgid "Judicial Level"
+msgstr "قضاوت مند"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__judicial_partner
+msgid "Judicial Partner"
+msgstr "قضاوت یار"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__jungle_chief
+msgid "Jungle Chief"
+msgstr "جگتورن"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__province__kabul
@@ -2790,6 +2924,16 @@ msgid "Let's create a job position."
 msgstr "بیایید یک موقعیت شغلی ایجاد کنیم."
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__lieutenant
+msgid "Lieutenant"
+msgstr "دگرمن"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__lieutenant_general
+msgid "Lieutenant Genenral"
+msgstr "دگر جنرال"
+
+#. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_language__listening
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "Listening"
@@ -2831,6 +2975,11 @@ msgstr "پیوست اصلی"
 #: model:ir.model.fields,field_description:egp_hr.field_employee_education__major
 msgid "Major"
 msgstr "رشته تحصیلی"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__major_general
+msgid "Major General"
+msgstr "ستر جنرال"
 
 #. modules: egp_hr, hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__emp_gender__male
@@ -2911,7 +3060,7 @@ msgstr "اعضا"
 #. module: hr
 #: model:ir.model,name:hr.model_ir_ui_menu
 msgid "Menu"
-msgstr "مینو"
+msgstr "منو"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__message_has_error
@@ -3074,12 +3223,19 @@ msgid "Nimroz"
 msgstr "نیمروز"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__ninth_position
+msgid "Ninth Position"
+msgstr "بست نهم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__ninth_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__ninth_rank
 msgid "Ninth Rank"
 msgstr "رتبه نهم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__ninth_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__ninth_step
 msgid "Ninth Step"
 msgstr "قدم نهم"
 
@@ -3282,6 +3438,11 @@ msgstr "دیگر"
 msgid "Other applications"
 msgstr "برنامه های دیگر"
 
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__outside_rank
+msgid "Outside Rank"
+msgstr "خارج رتبه"
+
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__pin
 #: model:ir.model.fields,field_description:hr.field_res_users__pin
@@ -3442,7 +3603,7 @@ msgstr "ضمانت شخص"
 #: code:addons/hr/models/res_users.py:0 code:addons/hr/models/res_users.py:0
 #, python-format
 msgid "Personal information update."
-msgstr "به روز رسانی اطلاعات شخصی"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_education__degree__phd
@@ -3507,11 +3668,13 @@ msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__pohand
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__pohand
 msgid "Pohand"
 msgstr "پوهاند"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__phanmal
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__phanmal
 msgid "Pohanmal"
 msgstr "پوهنمل"
 
@@ -3666,6 +3829,7 @@ msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__prof
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__prof
 msgid "Professor"
 msgstr "پروفیسور"
 
@@ -3825,7 +3989,7 @@ msgstr "ثبت خروج"
 #: code:addons/hr/models/res_users.py:0
 #, python-format
 msgid "Related Employees"
-msgstr "کارمندان مربوطه"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
@@ -3866,7 +4030,7 @@ msgstr "اقارب"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_punishment__violation_type__religious_affairs
-msgid "Religious Affairs"
+msgid "Religious ََAffairs"
 msgstr "امور دینی"
 
 #. module: egp_hr
@@ -4046,6 +4210,7 @@ msgstr "زمان‌بندی"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__scholar
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__scholar
 msgid "Scholar"
 msgstr "پوهاند"
 
@@ -4066,12 +4231,24 @@ msgid "Seasonal"
 msgstr ""
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__second_lieutenant
+msgid "Second Lieutenant"
+msgstr "دوهم بریدمن"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__second_position
+msgid "Second Position"
+msgstr "بست دوم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__second_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__second_rank
 msgid "Second Rank"
 msgstr "رتبه دوم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__second_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__second_step
 msgid "Second Step"
 msgstr "قدم دوم"
 
@@ -4116,12 +4293,19 @@ msgid "Settings"
 msgstr "تنظیمات"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__seventh_position
+msgid "Seventh Position"
+msgstr "بست هفتم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__seventh_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__seventh_rank
 msgid "Seventh Rank"
 msgstr "رتبه هفتم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__seventh_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__seventh_step
 msgid "Seventh Step"
 msgstr "قدم هفتم"
 
@@ -4138,7 +4322,7 @@ msgstr ""
 #: code:addons/hr/static/src/components/department_chart/department_chart.xml:0
 #, python-format
 msgid "Show employees"
-msgstr "کارمند نمایش داده شود."
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_reward__reward_type__sign
@@ -4151,12 +4335,19 @@ msgid "Single"
 msgstr "مجرد"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__sixth_position
+msgid "Sixth Position"
+msgstr "بست ششم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__sixth_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__sixth_rank
 msgid "Sixth Rank"
 msgstr "رتبه ششم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__sixth_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__sixth_step
 msgid "Sixth Step"
 msgstr "قدم ششم"
 
@@ -4180,6 +4371,11 @@ msgstr "شماره ملی"
 #: model_terms:ir.ui.view,arch_db:hr.print_employee_badge
 msgid "Software Developer"
 msgstr "سافتویر ډیوپلور"
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__soldier_or_officer
+msgid "Soldier / Officer"
+msgstr "عسکر / سرباز"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_language__speaking
@@ -4242,13 +4438,13 @@ msgstr ""
 "برنامه ریزی شده: فعالیت های آینده."
 
 #. module: egp_hr
-#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__job_step
 #: model_terms:ir.ui.view,arch_db:egp_hr.print_employee_id
 msgid "Step"
 msgstr "قدم"
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_experience__step
+#: model:ir.model.fields,field_description:egp_hr.field_hr_employee__job_step
 msgid "Step / Rank"
 msgstr "رتبه / قدم"
 
@@ -4285,6 +4481,7 @@ msgstr "مضمون"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__super_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__super_rank
 msgid "Super Rank"
 msgstr "فوق رتبه"
 
@@ -4296,7 +4493,9 @@ msgid "Superior Head"
 msgstr "آمر مستقیم"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__superior_rank
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__superior_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__superior_rank
 msgid "Superior Rank"
 msgstr "مافوق رتبه"
 
@@ -4387,12 +4586,19 @@ msgid "Temporary Village"
 msgstr "قریه"
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__tenth_position
+msgid "Tenth Position"
+msgstr "بست دهم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__tenth_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__tenth_rank
 msgid "Tenth Rank"
 msgstr "رتبه دهم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__tenth_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__tenth_step
 msgid "Tenth Step"
 msgstr "قدم دهم"
 
@@ -4511,12 +4717,19 @@ msgid "The work permit of %(employee)s expires at %(date)s."
 msgstr ""
 
 #. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__third_position
+msgid "Third Position"
+msgstr "بست سوم"
+
+#. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__third_rank
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__third_rank
 msgid "Third Rank"
 msgstr "رتبه سوم"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__third_step
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__third_step
 msgid "Third Step"
 msgstr "قدم سوم"
 
@@ -4531,7 +4744,7 @@ msgstr "تقدیر نامه درجه سوم"
 #: code:addons/hr/models/hr_employee.py:0
 #, python-format
 msgid "This employee already has an user."
-msgstr "این کارمند از قبل یک یوزر دارد"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__tz
@@ -4700,6 +4913,7 @@ msgstr "پوهنتون"
 
 #. module: egp_hr
 #: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__step__unranked
+#: model:ir.model.fields.selection,name:egp_hr.selection__hr_employee__job_step__unranked
 msgid "Unranked"
 msgstr "خارج رتبه"
 
@@ -4785,7 +4999,7 @@ msgstr "متوسط"
 #: code:addons/hr/static/src/components/avatar_card/avatar_card_popover_patch.xml:0
 #, python-format
 msgid "View profile"
-msgstr "دیدن پروفایل"
+msgstr ""
 
 #. module: egp_hr
 #: model:ir.model.fields,field_description:egp_hr.field_employee_person_guarantee__permanent_village_id
@@ -4863,6 +5077,11 @@ msgid ""
 msgstr ""
 "تنها با یک نگاه سریع بر روی صفحه نمایش کارمند Odoo، شما به راحتی می‌توانید تمام اطلاعات مورد نیاز خود را برای هر فرد پیدا کنید؛\n"
 "         اطلاعات مخاطب موقعیت شغلی، در دسترس بودن و غیره."
+
+#. module: egp_hr
+#: model:ir.model.fields.selection,name:egp_hr.selection__employee_experience__grade__without_rank
+msgid "Without Rank"
+msgstr "بدون رتبه"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__address_id
@@ -4967,7 +5186,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr.field_hr_employee_public__work_phone
 #: model:ir.model.fields,field_description:hr.field_res_users__work_phone
 msgid "Work Phone"
-msgstr "تلفن محل کار"
+msgstr "شماره تماس رسمی"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__resource_calendar_id
