@@ -56,8 +56,66 @@ class EmployeeExperience(models.Model):
 
     organization_id = fields.Many2one('employee.organization', string="Organization")
     job_position = fields.Char(string='Job Position')
-    grade = fields.Selection([('1st', '1st'), ('2nd', '2nd'), ('3rd', '3rd'), ('4th', '4th'), ('5th', '5th'),
-                              ('6th', '6th'), ('7th', '7th'), ('8th', '8th')], string="Grade")
+    # grade = fields.Selection([('1st', '1st'), ('2nd', '2nd'), ('3rd', '3rd'), ('4th', '4th'), ('5th', '5th'),
+    #                           ('6th', '6th'), ('7th', '7th'), ('8th', '8th')], string="Grade")
+
+    grade = fields.Selection([
+        ('major_general', 'Major General'),
+        ('lieutenant_general', 'Lieutenant Genenral'),
+        ('accused_general', 'Accused General'),
+        ('brigadier_general', 'Brigadier General'),
+        ('colonel', 'Colonel'),
+        ('lieutenant', 'Lieutenant'),
+        ('battler', 'Battler'),
+        ('accused', 'Accused'),
+        ('first_lieutenant', 'First Lieutenant'),
+        ('second_lieutenant', 'Second Lieutenant'),
+        ('acting_sergeant', 'Acting Sergeant'),
+        ('assistant_acting_sergeant', 'Assistant Acting Sergeant'),
+        ('chief_sergeant', 'Chief Sergeant'),
+        ('superior_rank', 'Superior Rank'),
+        ('grade_one', 'Grade 1'),
+        ('grade_two', 'Grade 2'),
+        ('grade_three', 'Grade 3'),
+        ('grade_four', 'Grade 4'),
+        ('grade_five', 'Grade 5'),
+        ('grade_six', 'Grade 6'),
+        ('grade_seven', 'Grade 7'),
+        ('grade_eight', 'Grade 8'),
+        ('grade_nine', 'Grade 9'),
+        ('grade_ten', 'Grade 10'),
+        ('outside_rank', 'Outside Rank'),
+        ('above_rank', 'Above Rank'),
+        ('assistant_chief', 'Assistant Chief'),
+        ('chief', 'Chief'),
+        ('jungle_chief', 'Jungle Chief'),
+        ('chief_of_regiment', 'Chief of Regiment'),
+        ('without_rank', 'Without Rank'),
+        ('soldier_or_officer', 'Soldier / Officer'),
+        ('judicial_branch_one', 'Judicial Branch 1'),
+        ('judicial_branch_two', 'Judicial Branch 2'),
+        ('judicial_branch_three', 'Judicial Branch 3'),
+        ('judicial_branch_four', 'Judicial Branch 4'),
+        ('judicial_partner', 'Judicial Partner'),
+        ('judicial_level', 'Judicial Level'),
+        ('above_degree', 'Above Degree'),
+        ('first_position', 'First Position'),
+        ('second_position', 'Second Position'),
+        ('third_position', 'Third Position'),
+        ('fourth_position', 'Fourth Position'),
+        ('fourth_position', 'Fourth Position'),
+        ('fifth_position', 'Fifth Position'),
+        ('sixth_position', 'Sixth Position'),
+        ('seventh_position', 'Seventh Position'),
+        ('eight_position', 'Eight Position'),
+        ('ninth_position', 'Ninth Position'),
+        ('tenth_position', 'Tenth Position')
+    ], string="Grade")
+
+
+
+
+
     step = fields.Selection([
         ('first_step', 'First Step'),
         ('second_step', 'Second Step'),
